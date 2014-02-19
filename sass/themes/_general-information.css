@@ -1,0 +1,68 @@
+/*
+
+Font Size Reference for this Theme:
+
+h1 = 42px = 2.625em
+h2 = 26px = 1.625em
+h3 = 20px = 1.25em
+h4 = 16px = 1em (Base Font Size)
+h5 = 13px = 0.8125em
+h6 = 11px = 0.6875em
+
+body p = 16px = 1em
+
+PX to EM
+Formula: size in pixels / parent size in pixels
+Example: 12px / 16px = .75em
+1px = 0.0625em
+
+Table of Contents for this Theme:
+
+Reset
+Global
+	Selection
+	Headings
+	Titles
+	Text Elements
+	Links
+	Alignment
+	Clearing
+	Box Sizing
+	Structure
+	Full-Width
+	Site Header
+Menu
+	Main Menu
+	Small Menu
+	Footer Menu
+Content
+Post Formats
+	Asides and Quotes
+	Link
+	Gallery
+Media
+Navigation
+Comments
+	Comment Form
+Search Form
+Widgets
+	Gravatar Widget
+	Search Widget
+	Cloud Widgets
+	RSS Widget
+	Menu & Categories Widgets
+	Authors Widget
+	Calendar Widget
+	Twitter Widget
+	Recent Comments Widget
+	Text Widget
+Select Boxes and Drop-Downs
+Footer
+Genericons
+WP Front-End Editor
+JetPack
+	Infinite Scroll
+Media Queries
+Print
+
+*/

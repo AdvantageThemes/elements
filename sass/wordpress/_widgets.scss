@@ -1,0 +1,486 @@
+/* =Widgets
+----------------------------------------------- */
+
+.widget {
+	@include font-size-13;
+	@include hyphens-auto;
+	word-wrap: break-word;
+	padding: 1em;
+	background: transparent;
+}
+
+.widget a {
+	color: $silver;
+	text-decoration: none;
+}
+
+.widget a:hover {
+	color: $silver;
+	text-decoration: none;
+}
+
+.widget-title {
+	@include font-size-16;
+}
+
+.widget-title,
+.widget-title a {
+	margin-top: 0;
+	color: $silver;
+}
+
+.widget-title a:hover {
+	color: $silver;
+}
+
+.widget ol,
+.widget ul {
+	padding: 0;
+}
+
+.widget ul {
+	margin: 0;
+	list-style: none;
+}
+
+.widget ul li {
+	margin: .5em 0;
+	padding: 0 0 .5em;
+}
+
+.widget .children li:last-child {
+	padding-bottom: 0;
+}
+
+// List Style Widgets - from 2014 theme.
+
+.widget_archive li,
+.widget_categories li,
+.widget_links li,
+.widget_meta li,
+.widget_nav_menu li,
+.widget_pages li,
+.widget_recent_comments li,
+.widget_recent_entries li {
+	margin: .5em 0;
+	padding: 0 0 .5em;
+}
+
+.widget_archive li:first-child,
+.widget_categories li:first-child,
+.widget_links li:first-child,
+.widget_meta li:first-child,
+.widget_nav_menu li:first-child,
+.widget_pages li:first-child,
+.widget_recent_comments li:first-child,
+.widget_recent_entries li:first-child {
+	border-top: 0;
+}
+
+.widget_categories li ul,
+.widget_nav_menu li ul,
+.widget_pages li ul {
+	margin-top: .5em;
+}
+
+.widget_categories li li:last-child,
+.widget_nav_menu li li:last-child,
+.widget_pages li li:last-child {
+	padding-bottom: 0;
+}
+
+/* Widget select and textarea */
+.widget input,
+.widget select,
+.widget textarea {
+	@include font-size-13;
+	@include box-sizing(border-box);
+	@include border-radius(.3125em);
+	padding: .4375em;
+	border: .125em solid $white;
+	background-color: $white-secondary;
+	color: $primary;
+	font-family: $font-sans-serif;
+}
+
+/* Make sure select elements fit in widgets */
+.widget select {
+	width: 15em;
+	text-shadow: $black-text-shadow;
+}
+
+.widget select option {
+	margin: 0 4px 2px 0;
+	padding: .0625em 0 .0625em .25em;
+	background-color: $primary;
+	color: $white-secondary;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+.widget input:focus,
+.widget textarea:focus {
+	border-color: $white-secondary;
+}
+
+.widget button,
+.widget input[type="button"],
+.widget input[type="reset"],
+.widget input[type="submit"] {
+	@include font-size-13;
+	@include box-sizing(border-box);
+	@include border-radius(.3125em);
+	@include box-shadow(inset 0 .0625em 0 $lightgray, inset 0 .9375em 1.0625em $lightgray, inset 0 -0.3125em .75em $lightgray);
+	padding: .8em;
+	border: .0625em solid $black-secondary;
+	background-color: $white-secondary;
+	color: $black-secondary;
+	font-family: $font-sans-serif;
+}
+
+.widget input[type="button"]:hover,
+.widget input[type="reset"]:hover,
+.widget input[type="submit"]:hover {
+	@include box-shadow(inset 0 .0625em 0 $lightgray, inset 0 .9375em 1.0625em $lightgray, inset 0 -0.3125em .75em $lightgray);
+	border-color: $black-secondary;
+}
+
+.widget input[type="button"]:focus,
+.widget input[type="reset"]:focus,
+.widget input[type="submit"]:focus,
+.widget input[type="button"]:active,
+.widget input[type="reset"]:active,
+.widget input[type="submit"]:active {
+	@include box-shadow(inset 0 -0.0625em 0 $darkgray, inset 0 .125em .3125em $darkgray);
+	border-color: $black-secondary;
+}
+
+/* Gravatar Widget */
+.widget-grofile img {
+	height: auto;
+	max-width: 100%;
+}
+
+/* Search Widget */
+.widget_search .search-submit {
+	display: none;
+}
+
+.widget_search .search-form input[type="search"] {
+	width: 15em;
+	padding: .3em;
+	text-shadow: $black-text-shadow;
+}
+
+.search-field {
+	min-height: 2.5em;
+	max-width: 15em;
+}
+
+/* Cloud Widgets */
+.wp_widget_tag_cloud div,
+.widget_tag_cloud div {
+	padding: .231em 0;
+	line-height: 1.5;
+}
+
+/* RSS Widget */
+.widget_rss a {
+	box-shadow: none;
+	color: $secondary;
+}
+
+.rsswidget img {
+	display: none;
+}
+
+.widget-title .rsswidget,
+.widget-title .rsswidget a {
+	margin-top: 0;
+	color: $silver;
+}
+
+.widget-title .rsswidget a:hover {
+	color: $silver;
+}
+
+.rss-date {
+	@include font-size-13;
+	color: $white-secondary;
+	font-style: italic;
+}
+
+.rssSummary {
+	@include font-size-16;
+	font-style: italic;
+}
+
+.widget_rss li {
+	margin-bottom: 1em;
+}
+
+.widget_rss li:last-child {
+	margin-bottom: 0;
+}
+
+.widget_rss li > cite {
+	color: $secondary;
+	font-style: italic;
+}
+
+
+/* Menu & Categories Widgets (With Sub-Items) */
+.widget-area .sub-menu,
+.widget-area .children {
+	margin-left: 1.5em;
+}
+
+.widget-area .sub-menu li,
+.widget-area .children li {
+	padding: 0;
+	border-width: 0;
+}
+
+.widget .menu li li {
+	margin-left: .5em;
+}
+
+.widget .menu li li li {
+	margin-left: 1em;
+}
+
+/* Authors Widget */
+.widget_authors li {
+	overflow: hidden;
+	background: none;
+}
+
+.widget_authors ul ul li {
+	overflow: hidden;
+}
+
+.widget_authors img {
+	float: left;
+	vertical-align: text-top;
+	margin-bottom: 1em;
+	padding-right: .833em;
+}
+
+/* Calendar Widget */
+#wp-calendar {
+	@include box-sizing(border-box);
+	@include border-radius(.9375em);
+	@include background-clip;
+	@include box-shadow(0 0 1em $secondary);
+	width: 100%;
+	background: $primary;
+	background: -moz-linear-gradient(top, $primary 0, $tertiary 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, $primary), color-stop(100%, $tertiary));
+	background: -webkit-linear-gradient(top, $primary 0, $tertiary 100%);
+	background: -o-linear-gradient(top, $primary 0, $tertiary 100%);
+	background: -ms-linear-gradient(top, $primary 0, $tertiary 100%);
+	background: linear-gradient(to bottom, $primary 0, $tertiary 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary', endColorstr='$tertiary',GradientType=0 );
+}
+
+#wp-calendar caption {
+	margin-bottom: .5em;
+	color: $white-secondary;
+	font-style: italic;
+	text-shadow: $highlight-link .1em .1em .2em;
+}
+
+#wp-calendar thead th {
+	@include font-size-16;
+	padding-top: 1.154em;
+	padding-bottom: 1.154em;
+	font-weight: 600;
+	text-align: center;
+}
+
+#wp-calendar tbody td {
+	@include font-size-16;
+	padding: .615em 2%;
+	color: $silver;
+	text-align: center;
+}
+
+#wp-calendar tbody td a {
+	color: $highlight-link;
+}
+
+#wp-calendar tbody td:hover {
+	@include border-radius(50%);
+	@include filter-gradient(#45484d, #000000, vertical);
+	@include background-image(linear-gradient(top,  hsla(218,5%,29%,1) 0%,hsla(0,0%,0%,1) 100%));
+	cursor: pointer;
+	background-color: #45484d;
+}
+
+#wp-calendar tfoot #next {
+	text-align: right;
+}
+
+#wp-calendar #today {
+	cursor: pointer;
+	background: none;
+	font-weight: 700;
+}
+
+#wp-calendar #prev,
+#wp-calendar #next {
+	@include font-size-16;
+	padding: .3em;
+}
+
+#wp-calendar tbody .pad {
+	border-radius: none;
+	background: none;
+}
+
+#wp-calendar tbody .pad:hover {
+	border-radius: none;
+	background: none;
+}
+
+/* Twitter Widget */
+.widget_twitter ul li {
+	margin-bottom: 1em;
+}
+
+.widget_twitter .timesince {
+	@include font-size-16;
+	color: $white-secondary;
+}
+
+.widget_twitter .twitter-follow-button {
+	margin-top: .8em;
+}
+
+/* Recent Comments Widget */
+td.recentcommentsavatarend,
+td.recentcommentsavatartop {
+	padding: .385em;
+}
+
+.widget_recent_comments td.recentcommentstexttop,
+.widget_recent_comments td.recentcommentstextend {
+	vertical-align: top;
+	padding: 0 .615em 1.1em;
+}
+
+/* Text Widget */
+
+.widget_text > div > :last-child {
+	margin-bottom: 0;
+}
+
+/* Arrange sidebars and widgets to display for Mobile, Tablet and Desktop. */
+
+/* Below Header Widgets: */
+#below-header .widget_text {
+	padding: 0;
+}
+
+/* Above Main Widgets: */
+#above-main .widget_text {
+	clear: both;
+	padding: 0;
+}
+
+/* Below Main Widgets: */
+#below-main .widget_text {
+	padding: 0;
+}
+
+/* Above Footer Widgets: */
+#above-footer .widget {
+	@include font-size-16;
+	padding: .75em;
+	color: $white-secondary;
+}
+
+#above-footer .widget {
+	@include background(linear-gradient(top, #0e0e0e, #7d7e7d));
+	@include filter-gradient(#0e0e0e, #7d7e7d, vertical);
+	@include border-radius(.9375em);
+	@include background-clip;
+	min-height: em(180);
+	background: #0e0e0e;
+}
+
+#above-footer .widget-title {
+	@include font-size-20;
+}
+
+#above-footer .widget-title,
+#above-footer .widget-title a {
+	margin-top: 0;
+	color: $white-secondary;
+}
+
+#above-footer .widget ol,
+#above-footer .widget ul {
+	padding: 0;
+}
+
+#above-footer .widget ul {
+	margin: 0;
+	list-style: none;
+}
+
+#above-footer .widget ul li {
+	margin: .5em 0;
+	padding: 0 0 .5em;
+}
+
+/* No need to float footer widgets at this size */
+#colophon #above-footer .widget-area {
+	float: left;
+}
+
+/* Two Footer Widget Areas */
+#above-footer.two .widget-area {
+	float: left;
+}
+
+#above-footer.two .widget-area + .widget-area {
+	margin-right: 0;
+}
+
+/* Three Footer Widget Areas */
+#above-footer.three .widget-area {
+	float: left;
+}
+
+#above-footer.three .widget-area + .widget-area + .widget-area {
+	margin-right: 0;
+}
+
+/* Four Footer Widget Areas */
+#above-footer.four .widget-area {
+	float: left;
+}
+
+#above-footer.four .widget-area + .widget-area + .widget-area {
+	margin-right: 0;
+}
+
+/* Right Sidebar Widget Images */
+#sidebar-right .widget img {
+	@include border-radius(.9375em);
+	max-width: 100%; /* Fluid images for posts, comments, and widgets */
+	border: .1875em double $black-secondary;
+}
+
+// these settings should be exactly the same as #sidebar-right found in _global.scss under - structure
+#content #widget-content-message {
+	width: 32.20339%;
+	margin-right: 0;
+	color: $secondary;
+}
+
+// Keeps Menu depth contained (doesn't break out).
+#sidebar-right .widget_nav_menu .sub-menu {
+	margin: auto;
+}

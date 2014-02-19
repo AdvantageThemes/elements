@@ -1,0 +1,113 @@
+/* =Navigation - Post/Image/Paging Navigation
+----------------------------------------------- */
+
+.nav-links {
+	@include hyphens-auto;
+	word-wrap: break-word;
+}
+
+.post-navigation .nav-links a {
+	color: $secondary;
+}
+
+.post-navigation .nav-links {
+	margin: 0 auto;
+}
+
+.post-navigation a[rel="next"] {
+	text-align: right;
+}
+
+.site-main .comment-navigation,
+.site-main .paging-navigation,
+.site-main .post-navigation {
+	overflow: hidden;
+	margin-top: 1.5em;
+	margin-bottom: 0;
+}
+
+.comment-navigation .nav-previous,
+.paging-navigation .nav-previous,
+.post-navigation .nav-previous {
+	float: left;
+	width: 50%;
+}
+
+.comment-navigation .nav-next,
+.paging-navigation .nav-next,
+.post-navigation .nav-next {
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+
+.site-main .nav-next a,
+.site-main .nav-previous a {
+	@include font-size-16;
+	color: $secondary;
+	font-style: italic;
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-ms-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+
+.site-main .nav-next a:hover,
+.site-main .nav-previous a:hover {
+	color: $highlight-link;
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-ms-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+
+// More Link
+.entry-content .more-link .meta-nav {
+	display: none;
+}
+
+.entry-content .more-link {
+	float: right;
+	border: 0;
+	color: $white-secondary;
+	font-family: $font-sans-serif;
+}
+
+.entry-content a.more-link,
+.entry-content a.more-link:visited {
+	@include box-shadow(0 .5em .375em -0.375em $tertiary);
+}
+
+.entry-content a.more-link:hover {
+	@include box-shadow(0 .5em .375em -0.375em $primary);
+	color: $highlight-link;
+}
+
+.entry-content a.more-link:focus,
+.entry-content a.more-link:active {
+	@include box-shadow(0 .5em .375em -0.375em $tertiary);
+
+}
+
+// Page Links - for example: Pages 1 2 3
+.page-links {
+	@include font-size-16;
+	clear: both;
+	text-transform: lowercase;
+	color: $highlight-link;
+
+}
+
+.page-links a {
+	display: inline-block;
+	cursor: pointer;
+	background-color: transparent;
+	color: $white-secondary;
+}
+
+.page-links a:hover {
+	color: $highlight-link;
+}
+

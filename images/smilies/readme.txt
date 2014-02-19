@@ -1,0 +1,2 @@
+The "Emoticons" or "Smilies" in this set are modified from IcoMoon http://icomoon.io/
+This package is licensed under the GNU General Public License: http://www.gnu.org/licenses/gpl.html

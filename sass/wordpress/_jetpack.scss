@@ -1,0 +1,107 @@
+/* =JetPack
+----------------------------------------------- */
+
+
+/* Infinite Scroll
+----------------------------------------------- */
+
+//Globally hidden elements when Infinite Scroll is supported and in use.
+
+// Older and Newer Posts Navigation (always hidden).
+// Theme Footer (when set to scrolling).
+.infinite-scroll #nav-below,
+.infinite-scroll.neverending #colophon {
+	display: none;
+}
+
+
+// When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .never-ending) before
+.infinity-end.neverending #colophon {
+	display: block;
+}
+
+
+// Global style tweaks when Infinite Scroll is supported and in use.
+
+// Each Infinite Scroll loop content wrapper (multiple instances).
+// Each Infinite Scroll loading spinner (multiple instances).
+// The Load more posts button.
+.infinite-scroll .infinite-wrap,
+.infinite-scroll .infinite-loader,
+.infinite-scroll #infinite-handle {
+	clear: both;
+}
+
+.infinite-scroll .infinite-wrap {
+	padding: 2.5em 0 0;
+	border-top: 0;
+}
+
+ // Infinite Scroll border
+.infinite-scroll #infinite-footer .container {
+	border-color: $black-secondary;
+}
+
+
+// Make sure that clicking Load more posts doesn't cause any jarring.
+.infinite-scroll #infinite-handle {
+	height: em(52);
+	padding-top: 1.8em;
+}
+
+.infinite-scroll #infinite-handle span {
+	@include font-size-13;
+	display: block;
+	width: em(150);
+	margin: 0 auto;
+	background: $white-secondary;
+	color: $black-secondary;
+	text-align: center;
+}
+
+.infinite-scroll #infinite-handle span:hover {
+	background: $white-secondary;
+}
+
+.infinite-scroll .infinite-loader {
+	width: em(28);
+	margin: 0 auto;
+	padding: 0 0 em(62);
+}
+
+
+/* Gravatar and Hovercard
+----------------------------------------------- */
+
+/* Hovercard */
+.gcard {
+	margin: 1.875em .875em 0 !important;
+	border: .125em solid $highlight-link;
+	background: $black !important;
+}
+.grav-inner {
+	border: .0625em solid $silver;
+}
+.gcard .grav-grav {
+	border: .0625em solid $highlight-link !important;
+}
+
+/* Author Avatar */
+.author-avatar {
+	margin: 0;
+	padding: 0;
+}
+
+.avatar {
+	@include border-radius(.9375em);
+	@include background-clip;
+	margin: 0;
+	padding: 0;
+	border-color: $primary !important;
+}
+
+.avatar:hover {
+	@include border-radius(0);
+	border-color: $primary !important;
+}
+

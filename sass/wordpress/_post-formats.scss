@@ -1,0 +1,214 @@
+/* =Post Formats
+----------------------------------------------- */
+
+/* Quotes */
+.format-quote {
+	margin-bottom: 1.5em;
+	padding: 1.5em;
+}
+
+.format-quote .entry-title,
+.format-quote .entry-title a {
+	@include font-size-26;
+	color: $silver;
+	font-family: $font-serif;
+	text-transform: uppercase;
+}
+
+.format-quote p,
+.format-quote blockquote {
+	@include font-size-16;
+	color: $silver;
+	font-style: italic;
+}
+
+.format-quote blockquote {
+	margin: 0;
+	padding: 1em 1em 0;
+	border: 0;
+}
+
+.format-quote blockquote p {
+	padding-left: .5em;
+	border-left: .625em solid $secondary;
+}
+
+.format-quote:last-of-type {
+	padding-bottom: 1.5em;
+}
+
+/* Gallery */
+.format-gallery .entry-content {
+	margin-bottom: 1.5em;
+}
+
+.format-gallery .entry-thumbnail img {
+	@include border-radius(.9375em);
+	@include background-clip;
+	@include box-shadow(.1em .1em .2em $white-secondary);
+	height: auto;
+	max-width: -moz-calc(100% - .375em);
+	max-width: -webkit-calc(100% - .375em);
+	max-width: -o-calc(100% - .375em);
+	max-width: calc(100% - .375em);  // 100% - the border = large size images fit perfectly.
+	margin: 0;
+	padding: 0;
+	border: .0625em solid $secondary;
+}
+
+/* Chat */
+
+/* "Chat" Format for this theme is based on the work of Justin Tadlock and David Chandra http://justintadlock.com/archives/2012/08/21/post-formats-chat and the chat.php file for this theme.*/
+
+.chat-transcript {
+	@include border-radius(.3125em);
+	padding: .4375em;
+	border: .125em solid $tertiary;
+	background-color: $secondary;
+}
+
+.chat-row {
+	margin: .5em 0;
+}
+
+.chat-author {
+	font-weight:bold;
+}
+
+.chat-author cite {
+	color:$white;
+	font-style: italic;
+}
+
+.chat-text p {
+	margin:0;
+}
+
+.single-format-chat .chat-author::before  {
+	@include genericon-primary;
+	content: "\f108";
+	padding-right: .1875em;
+	color: $tertiary;
+}
+
+/* Asides */
+.format-aside {
+	margin: 0;
+	padding: 0 1.5em 0;
+}
+
+.format-aside:last-of-type {
+	padding-bottom: 1.5em;
+}
+
+.aside-permalink {
+	margin-top: .5em;
+}
+
+.aside-permalink a {
+	cursor: pointer;
+	color: $highlight-link;
+}
+
+.aside-permalink a:hover {
+	color: $white-secondary;
+}
+
+/* Status */
+.format-status {
+	margin: 0;
+	padding: 0;
+}
+
+.format-status:last-of-type {
+	padding-bottom: 1.5em;
+}
+
+.status-permalink {
+	margin-top: .5em;
+}
+
+.status-permalink a {
+	cursor: pointer;
+	color: $highlight-link;
+}
+
+.status-permalink a:hover {
+	color: $white-secondary;
+}
+
+/* Link */
+
+.format-link {
+	margin: 0;
+	padding: 0;
+}
+
+.format-link:last-of-type {
+	padding-bottom: 1.5em;
+}
+
+.format-link .entry-content p a {
+	cursor: pointer;
+	box-shadow: none;
+	color: $highlight-link;
+}
+
+.format-link .entry-content p a:hover {
+	color: $white-secondary;
+}
+
+.link-permalink {
+	margin-top: .5em;
+}
+
+/* Audio */
+.format-audio {
+	margin: 0;
+	padding: 0;
+}
+
+.format-audio:last-of-type {
+	padding-bottom: 1.5em;
+}
+
+.format-audio .entry-content p a {
+	cursor: pointer;
+	box-shadow: none;
+	color: $highlight-link;
+}
+
+.format-audio .entry-content p a:hover {
+	color: $white-secondary;
+}
+
+/* Video */
+.format-video {
+	margin: 0;
+	padding: 0;
+}
+
+.format-video:last-of-type {
+	padding-bottom: 1.5em;
+}
+
+.format-video .entry-content p a {
+	cursor: pointer;
+	box-shadow: none;
+	color: $highlight-link;
+}
+
+.format-video .entry-content p a:hover {
+	color: $white-secondary;
+}
+
+.format-video .entry-content iframe {
+	@include box-shadow(.3125em .3125em .3125em $white-box-shadow);
+	max-width: -moz-calc(100% - .375em);
+	max-width: -webkit-calc(100% - .375em);
+	max-width: -o-calc(100% - .375em);
+	max-width: calc(100% - .375em);  // 100% - the border = large size images fit perfectly.
+	margin: 0;
+	padding: 0;
+	border: .1875em double $tertiary;
+}

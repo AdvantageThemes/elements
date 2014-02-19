@@ -1,0 +1,291 @@
+/* =Content
+----------------------------------------------- */
+
+.site-content {
+	position: relative;
+	clear: both;
+	z-index: 4;
+	background: transparent;
+}
+
+#content {
+	@include border-radius(.9375em);
+	@include background-clip;
+	@include box-shadow(.3125em .3125em .3125em $white-box-shadow);
+	margin-top: 3.125em;
+	margin-bottom: .625em;
+	padding: 0 1em 1.25em;
+	background-color: $primary;
+}
+
+.hentry {
+	@include box-shadow(0 .5em .375em -0.375em $secondary);
+	margin: 0 0 1.5em;
+	padding-bottom: 1.5em;
+}
+
+.hentry:last-of-type {
+	margin-bottom: 0;
+	padding-bottom: 1.5em;
+	box-shadow: none;
+}
+
+.sticky {
+	color: $secondary;
+}
+
+.sticky h1 a {
+	@include box-shadow(0 .5em .375em -0.375em $secondary);
+}
+
+.post-label {
+	@include font-size-16;
+	display: inline-block;
+	opacity: .5;
+	color: $green;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.page-header {
+	margin-bottom: 1.5em;
+}
+
+.taxonomy-description {
+	@include font-size-16;
+	@include border-radius(.9375em);
+	@include background-clip;
+	padding: 1.5em;
+	border: .0625em solid $black-secondary;
+	background: $white-secondary;
+	color: $black-secondary;
+}
+
+.entry-meta {
+	@include font-size-16;
+	clear: both;
+}
+
+.site-content article.attachment .entry-meta {
+	margin-top: 1em;
+}
+
+.entry-attachment {
+	text-align: center;
+}
+
+.entry-content .attachment a,
+.entry-content .attachment a:visited {
+	box-shadow: none;
+}
+
+.entry-content .attachment a:hover,
+.entry-content .attachment a:focus,
+.entry-content .attachment a:active {
+	box-shadow: none;
+}
+
+.entry-header .entry-meta {
+	margin-bottom: 1em;
+	text-transform: capitalize;
+}
+
+.entry-meta,
+.entry-date,
+.page-title,
+.page-title a {
+	color: $white-secondary;
+}
+
+.entry-meta a,
+.entry-meta a:visited {
+	@include box-shadow(0 .5em .375em -0.375em $tertiary);
+}
+
+.entry-meta a:hover,
+.entry-meta a:focus,
+.entry-meta a:active {
+	@include box-shadow(0 .5em .375em -0.375em $secondary);
+}
+
+.posted-on a,
+.posted-on a:visited {
+	box-shadow: none;
+}
+
+.posted-on a:hover,
+.posted-on a:focus,
+.posted-on a:active {
+	box-shadow: none;
+}
+
+.comments-link a,
+.comments-link a:visited {
+	box-shadow: none;
+	color: $highlight-link;
+}
+
+.comments-link a:hover,
+.comments-link a:focus,
+.comments-link a:active {
+	box-shadow: none;
+	color: $silver;
+}
+
+.byline,
+.updated {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+	text-transform: lowercase;
+}
+
+.single .author,
+.group-blog .author {
+	display: inline;
+	text-transform: capitalize;
+}
+
+.entry-title {
+	@include font-size-26;
+}
+
+.entry-title a {
+	border: 0;
+}
+
+.page-title {
+	@include font-size-26;
+	text-transform: uppercase;
+}
+
+.page-title a,
+.page-title span {
+	font-style: italic;
+}
+
+.page-title a:hover {
+	color: $white-secondary;
+}
+
+.entry-thumbnail {
+	margin: 1em 0;
+	padding: 0;
+}
+
+.page-content,
+.entry-content,
+.content-area,
+.entry-summary {
+	@include font-size-16;
+	@include hyphens-auto;
+	word-wrap: break-word;
+}
+
+.sub-pages {
+	@include font-size-13;
+	padding: 1.8462em 0;
+	border-width: .25em 0;
+}
+
+.sub-page-list {
+	margin-bottom: 0;
+}
+
+.edit-link {
+	display: inline-block;
+	clear: both;
+}
+
+.entry-content table,
+.comment-content table {
+	width: 100%;
+	margin: 0 .077em 1.923em 0;
+	text-align: left;
+}
+
+.entry-content tr th,
+.entry-content thead th,
+.comment-content tr th,
+.comment-content thead th {
+	@include font-size-16;
+	padding: 1em;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.entry-content tr td,
+.comment-content tr td {
+	padding: 1em;
+}
+
+.entry-content button,
+html .entry-content input[type="button"],
+html input[type="reset"],
+html input[type="submit"] {
+	padding: .3em;
+}
+
+.entry-content ul {
+	list-style: disc;
+}
+
+.entry-content ol {
+	list-style: decimal;
+}
+
+.error404 #searchform {
+	margin: 2.5em 0;
+}
+
+// Override the Twitter embed fixed width.
+.entry-content .twitter-tweet-rendered {
+	max-width: 100% !important;
+}
+
+/* Error Page */
+.error-404 #searchform {
+	margin: 2.5em 0;
+}
+
+.error-404 h1 {
+	color: $highlight-link;
+	text-shadow: .1em .1em .1em  $secondary;
+}
+
+.error-404 .widget {
+	float:left;
+}
+
+.error-404 .widget_tag_cloud {
+	max-width: 10em;
+}
+
+/* Author Page */
+.author .site-main ul {
+	margin: 0;
+	padding: 0;
+	color: $secondary;
+	list-style: none;
+}
+
+.author .site-main li {
+	margin: .625em 0 .625em;
+}
+
+.author .site-main li a {
+	cursor: pointer;
+	color: $highlight-link;
+	box-shadow: none;
+}
+
+.author .site-main li a:hover {
+	color: $white-secondary;
+}
+
+.author-post-indent {
+	padding-left: 2.3125em;
+}

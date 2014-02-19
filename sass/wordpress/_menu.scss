@@ -1,0 +1,368 @@
+/* =Menu
+----------------------------------------------- */
+
+/* Main Menu */
+.main-navigation {
+	@include border-radius(.9375em);
+	@include background-clip;
+	@include box-shadow(.3125em .3125em .3125em $white-box-shadow);
+	display: block;
+	position: relative;
+	float: left;
+	clear: both;
+	width: 100%;
+	z-index: 9;
+	background-color: $primary;
+}
+
+.main-navigation li {
+	margin: 0 -.1em -.06em 0;
+}
+
+.main-navigation ul li a {
+	@include font-size-16;
+	padding: .875em;
+	background: transparent;
+	font-weight: 600;
+}
+
+.main-navigation ul li a,
+.main-navigation ul ul a {
+	border-bottom: 0;
+	color: $white-secondary;
+}
+
+
+.main-navigation ul {
+	position: relative;
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.main-navigation ul li a:hover {
+	color: $highlight-link;
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-ms-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+
+
+.main-navigation li {
+	position: relative;
+	float: left;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+
+.main-navigation ul ul {
+	@include border-radius(.9375em);
+	@include background-clip;
+	@include box-shadow(.3125em .3125em .3125em $white-box-shadow);
+	display: none;
+	position: absolute;
+	float: left;
+	top: 4.375em;
+	left: 0;
+	margin-top: 0;
+	z-index: 9;
+	border: .0625em solid $black-secondary;
+	background-color: $primary;
+}
+
+.main-navigation ul ul li {
+	margin-right: inherit;
+}
+
+.main-navigation ul ul ul {
+	left: 15%;
+}
+
+.main-navigation ul ul a {
+	@include font-size-16;
+	width: em(200);
+	padding: .875em;
+	background: none;
+	font-weight: 600;
+}
+
+.main-navigation ul ul ul a {
+	margin-top: 0;
+}
+
+.main-navigation ul ul ul ul {
+	top: 2.75em;
+	left: 15%;
+	margin-top: 0;
+}
+
+.main-navigation li:hover > a {
+	background: transparent;
+	color: $white-secondary;
+}
+
+.main-navigation ul ul :hover > a {
+	background: transparent;
+	color: $white-secondary;
+}
+
+.main-navigation ul ul a:hover {
+	color: $highlight-link;
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-ms-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+
+.main-navigation ul li:hover > ul {
+	display: block;
+	color: $white-secondary;
+}
+
+.main-navigation li:hover > a,
+.main-navigation ul li.current_page_item a,
+.main-navigation ul li.current-menu-item a,
+.main-navigation ul li.current_page_parent a,
+.main-navigation ul li.current_page_ancestor a {
+	color: $white-secondary;
+}
+
+.main-navigation ul li.current_page_item a,
+.main-navigation ul li.current-menu-item a,
+.main-navigation ul li.current_page_parent a,
+.main-navigation ul li.current_page_ancestor a {
+	color: $highlight-link;
+}
+
+.main-navigation li.current_page_parent ul.sub-menu a,
+.main-navigation li.current_page_ancestor ul.sub-menu a,
+.main-navigation li.current_page_item ul.sub-menu a,
+.main-navigation li.current-menu-item ul.sub-menu a {
+	background: transparent;
+	color: $highlight-link;
+}
+
+.main-navigation li.current_page_parent ul.sub-menu a,
+.main-navigation li.current_page_ancestor ul.sub-menu a,
+.main-navigation li.current_page_item ul.sub-menu a,
+.main-navigation li.current-menu-item ul.sub-menu a {
+	background: transparent;
+	color: $highlight-link;
+}
+
+.main-navigation ul.sub-menu li.current_page_parent a,
+.main-navigation ul.sub-menu li.current_page_ancestor a,
+.main-navigation ul.sub-menu li.current_page_item a,
+.main-navigation ul.sub-menu li.current-menu-item a {
+	background: transparent;
+	color: $highlight-link;
+}
+
+/* Small Menu */
+.menu-toggle {
+	display: none;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+	}
+
+	#site-navigation {
+		margin: 0;
+		padding-right: .1250em;
+		padding-left: 0;
+	}
+
+	.main-navigation h1 {
+		@include font-size-26;
+		color: $secondary;
+		text-indent: em(30);
+	}
+
+	.main-navigation h1::before {
+		padding-right: .25em;
+		vertical-align: middle;
+		font: normal 1em/1 'Genericons';
+		-webkit-font-smoothing: antialiased;
+		content: "\f419";
+		color: $icon-secondary;
+		text-shadow: $icon-primary 0 0 .2em;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+
+	.main-navigation ul li {
+		float: none;
+	}
+
+	.main-navigation ul li a {
+		@include font-size-13;
+		padding: .875em;
+		background: transparent;
+		font-weight: normal;
+	}
+
+	.main-navigation ul ul {
+		position: absolute;
+		top: em(30);
+		left: 10%;
+	}
+
+	.main-navigation ul ul ul {
+		top: em(30);
+		left: 10%;
+	}
+
+	.main-navigation ul ul ul ul {
+		top: em(30);
+		left: 10%;
+	}
+
+}
+
+/* Footer Menu */
+
+.navigation-footer ul {
+	@include font-size-20;
+	margin: 0;
+	padding: 0;
+	color: $silver;
+	font-family: $font-serif;
+	list-style: none;
+}
+
+.navigation-footer li {
+	float: left;
+	padding-right: em(10);
+	padding-left: em(10);
+}
+
+.navigation-footer a::after {
+	margin: 0;
+	padding-left: .75em;
+	display: inline-block;
+	vertical-align: middle;
+	font: normal 1em/1 'Genericons';
+	-webkit-font-smoothing: antialiased;
+	content: "\f421";
+	color: $icon-primary;
+}
+
+.navigation-footer li:last-child a::after {
+	content: "";
+}
+
+
+.navigation-footer a,
+.navigation-footer a:visited {
+	display: block;
+	color: $silver;
+	text-decoration: none;
+	text-shadow: $black .1em .1em .1em;
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-ms-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+
+.navigation-footer a:hover,
+.navigation-footer a:focus,
+.navigation-footer a:active {
+	color: $highlight-link;
+	text-decoration: none;
+	text-shadow: $black .1em .1em .1em;
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-ms-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+
+.navigation-footer ul li.current_page_item a,
+.navigation-footer ul li.current-menu-item a,
+.navigation-footer ul li.current_page_parent a,
+.navigation-footer ul li.current_page_ancestor a {
+	color: $highlight-link;
+}
+
+/* Top Menu */
+
+.navigation-top {
+	margin: 1em 0;
+}
+
+.navigation-top ul {
+	@include font-size-20;
+	margin: 0;
+	padding: 0;
+	color: $silver;
+	font-family: $font-serif;
+	list-style: none;
+}
+
+.navigation-top li {
+	float: right;
+	padding-right: em(10);
+	padding-left: em(10);
+}
+
+.navigation-top a::after {
+	margin: 0;
+	padding-left: .75em;
+	display: inline-block;
+	vertical-align: middle;
+	font: normal 1em/1 'Genericons';
+	-webkit-font-smoothing: antialiased;
+	content: "\f421";
+	color: $icon-primary;
+}
+
+.navigation-top li:first-child a::after {
+	content: "";
+}
+
+.navigation-top a,
+.navigation-top a:visited {
+	display: block;
+	color: $silver;
+	text-decoration: none;
+	text-shadow: $black .1em .1em .1em;
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-ms-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+
+.navigation-top a:hover,
+.navigation-top a:focus,
+.navigation-top a:active {
+	color: $highlight-link;
+	text-decoration: none;
+	text-shadow: $black .1em .1em .1em;
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-ms-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+
+.navigation-top ul li.current_page_item a,
+.navigation-top ul li.current-menu-item a,
+.navigation-top ul li.current_page_parent a,
+.navigation-top ul li.current_page_ancestor a {
+	color: $highlight-link;
+}

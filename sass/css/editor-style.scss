@@ -1,0 +1,38 @@
+/*
+Theme Name: Elements
+Description: Used to style the TinyMCE editor.
+*/
+// Compass
+@import "compass";
+@import "susy";
+// Global Settings
+@import "settings";
+// Theme Specific - Change Header Info Above to Match Theme
+@import "themes/elements";
+// @import "themes/elements-aether";
+// @import "themes/elements-air";
+// @import "themes/elements-water";
+// @import "themes/elements-fire";
+// @import "themes/elements-earth";
+
+
+html .mceContentBody {
+	max-width: 656px;
+}
+
+.mceContentBody {
+	max-width: 656px;
+}
+
+// import the following during development
+// for production - no line numbering and edit sections out of editor-style.css
+@import "wordpress/global";
+@import "wordpress/content";
+@import "wordpress/post-formats";
+@import "wordpress/media";
+// for editor styles
+// edit for production
+body {
+	background-image: none;
+	background-repeat: repeat;
+}

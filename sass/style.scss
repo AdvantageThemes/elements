@@ -1,0 +1,56 @@
+/*
+Theme Name: Elements
+Theme URI: http://advantagethemes.com/themes/elements/
+Author: Advantage Themes
+Author URI: http://advantagethemes.com/
+Description: Elements is a responsive, modern, HTML5 template that adapts your website to mobile devices, desktops, or any other viewing environment. Elements has a variety of widget areas to help customize your website (one below the header, two in the content area, one in the left sidebar, one in the right sidebar, four in the footer). Elements features a custom header, custom template tags, a toggled, drop-down menu for small screens (like your phone), RTL-Language Support, W3C Markup Validated, Cross-Browser compatible, and more: <strong>1)</strong> full-width page template <strong>2)</strong> contributor page to show of your authors <strong>3)</strong> enhanced WordPress Gallery <strong>4)</strong> post formats that include aside, status, image, and quote formats
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: dark, two-columns, right-sidebar, responsive-layout, fluid-layout, custom-background, custom-header, custom-menu, editor-style, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: elements
+Domain Path: /languages/
+
+This theme, like WordPress, is licensed under the GPL and is yours to enjoy!
+
+This theme is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+BEFORE YOU MAKE ANY CHANGES
+Please do not edit style.css or any other theme files directly. If you do, your customizations will be lost when this theme is updated.
+WordPress recommends using the Child Theme method for making changes.
+Read More: http://codex.wordpress.org/Child_Themes
+
+*/
+// Compass
+@import "compass";
+@import "susy";
+@import "breakpoint";
+// Global Settings
+@import "settings";
+// Theme Specific - Change Header Info Above to Match Theme
+@import "themes/elements";
+// @import "themes/elements-aether";
+// @import "themes/elements-air";
+// @import "themes/elements-water";
+// @import "themes/elements-fire";
+// @import "themes/elements-earth";
+
+// Additional  Theme Information Introduction
+@import "themes/general-information";
+// WordPress
+@import "wordpress/reset";
+@import "wordpress/global";
+@import "wordpress/menu";
+@import "wordpress/content";
+@import "wordpress/post-formats";
+@import "wordpress/media";
+@import "wordpress/navigation";
+@import "wordpress/comments";
+@import "wordpress/search-form";
+@import "wordpress/widgets";
+@import "wordpress/footer";
+@import "wordpress/wp-front-end-editor";
+@import "wordpress/genericons";
+@import "wordpress/jetpack";
+@import "wordpress/media-queries";
+@import "wordpress/print";

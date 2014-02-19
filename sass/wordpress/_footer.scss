@@ -1,0 +1,15 @@
+/* =Footer
+----------------------------------------------- */
+
+.site-info {
+	@include font-size-16;
+	width: 100%;
+	margin: 0;
+	border-top: em(1) inset $black-secondary;
+	background-color: $primary;
+	background-image: $background-site-info;
+	background-repeat: repeat;
+	color: $white;
+	text-align: center;
+	text-shadow: $black-text-shadow;
+}

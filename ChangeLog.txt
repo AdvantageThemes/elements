@@ -1,0 +1,17 @@
+Changelog Legend:
+
+[+] = Added
+[*] = Changed
+[^] = Moved
+[=] = No Change
+[-] = Deleted
+[X] = Bugs
+[$] = Language Change or Fix
+[!] = Security Fix
+
+
+Version 1.0
+Initial Release
+
+Latest editions/changes
+

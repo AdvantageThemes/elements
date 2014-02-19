@@ -1,0 +1,215 @@
+/* =Media
+----------------------------------------------- */
+
+.comment-content img,
+.entry-content img,
+.entry-summary img,
+.widget img,
+.post-thumbnail img,
+img.size-full,
+img.size-large,
+img.size-thumbnail {
+	@include border-radius(.9375em);
+	@include background-clip;
+	height: auto;
+	max-width: -moz-calc(100% - .375em);
+	max-width: -webkit-calc(100% - .375em);
+	max-width: -o-calc(100% - .375em);
+	max-width: calc(100% - .375em);  // 100% - the border = large size images fit perfectly.
+	border: .1875em double $black-secondary;
+}
+
+// Featured Image for Posts and Pages.
+.entry-thumbnail img {
+	@include border-radius(.9375em);
+	@include background-clip;
+	height: auto;
+	max-width: -moz-calc(100% - .375em);
+	max-width: -webkit-calc(100% - .375em);
+	max-width: -o-calc(100% - .375em);
+	max-width: calc(100% - .375em);  // 100% - the border = large size images fit perfectly.
+	border: .1875em double $tertiary;
+	margin: 0;
+	padding: 0;
+}
+
+// Header Image for Site.
+.header-image img {
+	@include border-radius(.9375em);
+	@include background-clip;
+	@include box-shadow(.3125em .3125em .3125em $white-box-shadow);
+	height: auto;
+	max-width: -moz-calc(100% - .375em);
+	max-width: -webkit-calc(100% - .375em);
+	max-width: -o-calc(100% - .375em);
+	max-width: calc(100% - .375em);  // 100% - the border = large size images fit perfectly.
+	border: .1875em double $tertiary;
+	margin: 0;
+	padding: 0;
+}
+
+// added for the editor styles
+.wp-caption {
+	margin: 0;
+	padding: 0;
+	padding-top: 0;
+	border: 0;
+	background-color: transparent;
+	text-align: center;
+}
+
+// added for the editor styles
+img.wp-gallery {
+	width: 100%;
+	height: em(250);
+	border: 0;
+}
+
+img.wp-oembed {
+	width: em(300);
+	height: em(250);
+	border: 0;
+}
+// End Additions
+
+p img,
+.wp-caption {
+	margin-top: .5em;
+}
+
+p img.aligncenter {
+	margin-top: .5em;
+}
+
+img.aligncenter,
+img.alignleft,
+img.alignright,
+img.alignnone {
+	margin-bottom: 1.5em;
+}
+
+.wp-caption {
+	max-width: 100%;
+}
+
+.wp-caption.aligncenter,
+.wp-caption.alignleft,
+.wp-caption.alignright,
+.wp-caption.alignnone {
+	margin-bottom: 1.5em;
+}
+
+.wp-caption.alignright {
+	margin-left: 1.5em;
+}
+
+.wp-caption.alignleft {
+	margin-right: 1.5em;
+}
+
+.wp-caption img {
+	display: inline-block;
+	margin: auto;
+}
+
+.widget .wp-caption img {
+	height: auto;
+}
+
+.wp-caption-text {
+	@include box-sizing(border-box);
+	margin: auto;
+	color: $white-secondary;
+	font-family: $font-script;
+	text-align: center;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 1em 0;
+}
+
+// added for editor styles
+.wp-caption-dd {
+	@include font-size-16;
+	font-family: $font-serif;
+}
+
+.gallery-caption {
+	margin: auto;
+	color: $white-secondary;
+	font-family: $font-script;
+	text-align: center;
+}
+
+.site-main .gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-caption {
+	@include box-sizing(border-box);
+}
+
+.gallery img {
+	@include box-shadow(0 .625em .375em -0.375em $secondary);
+}
+
+.gallery a img {
+	height: auto;
+	border: 0;
+}
+
+.gallery dt {
+	margin: 0;
+}
+
+.gallery-item dt {
+	margin: 0 .25em;
+}
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object,
+video {
+	display: block;
+	max-width: 100%;
+	margin-bottom: 1.25em;
+}
+
+/* Video */
+.video-wrapper .video-player {
+	height: auto !important;
+	max-width: 650px;
+	margin: 0 auto 1.25em auto;
+	padding: 0;
+}
+.videopress-placeholder {
+	height: auto !important;
+	max-width: 100%;
+}
+
+/* Audio */
+.wp-audio-shortcode {
+	margin: 0 0 1.25em;
+}
+.wp-audio-shortcode .mejs-controls .mejs-time-rail .mejs-time-loaded {
+	background: $white-secondary;
+}
+.wp-audio-shortcode .mejs-controls .mejs-time-rail .mejs-time-current,
+.wp-audio-shortcode .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+	background: $secondary;
+}
+
+/* Latex */
+img.latex {
+	vertical-align: middle;
+}
+
+/* Smileys */
+img.wp-smiley {
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: none;
+	background: transparent;
+}

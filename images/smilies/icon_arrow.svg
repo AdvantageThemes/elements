@@ -1,0 +1,28 @@
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="15" width="15" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 15 15">
+<metadata>
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+<cc:license rdf:resource=""/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<defs>
+<clipPath id="clipPath2998">
+<rect height="16.704792" width="15.535625" y="-0.60582876" x="4.1203055" fill="#000000"/>
+</clipPath>
+<clipPath id="clipPath3002">
+<rect height="8.7076273" width="8.7076273" y="2.1292372" x="-9.9152536" fill="#000000"/>
+</clipPath>
+</defs>
+<g>
+<path d="m-1.2076268,6.4830508a4.3538136,4.3538136,0,1,1,-8.7076273,0,4.3538136,4.3538136,0,1,1,8.7076273,0z" clip-path="url(#clipPath3002)" transform="matrix(1.7226277,0,0,1.7226277,17.080291,-3.6678829)" fill="#00688b"/>
+<g fill="#ffffff" transform="matrix(0.96552283,0,0,0.89794591,-3.9782492,0.54400148)" clip-path="url(#clipPath2998)">
+<path d="m19.65593,7.7466579-6.125,6.1250001s-0.03381-12.3045767,0-12.2500001z"/>
+<rect height="3.1377864" width="14.628271" y="6.1776743" x="3.0845973"/>
+</g>
+</g>
+</svg>

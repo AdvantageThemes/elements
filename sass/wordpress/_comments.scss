@@ -1,0 +1,258 @@
+/* =Comments
+----------------------------------------------- */
+
+#comments {
+	margin-top: 3em;
+	color: $white-secondary;
+}
+
+.comments-area,
+#respond {
+	clear: both;
+	margin-top: 1.5em;
+}
+
+.comments-title,
+#respond {
+	padding-top: 1.5em;
+}
+
+.comments-title {
+	@include font-size-20;
+}
+
+.comments-title span {
+	font-style: italic;
+}
+
+.comment-list {
+	margin: 1.5em 0 1em;
+	padding: .1875em 0;
+}
+
+.comment-list li {
+	list-style: none;
+}
+
+.comment-list,
+.children {
+	list-style: none;
+}
+
+.children {
+	margin: 0 0 0 6%;
+}
+
+.comment-list li.comment,
+.comment-list li.pingback {
+	@include box-shadow(0 0.5em 0.375em -0.375em $tertiary);
+}
+
+.comment-list .children li {
+	@include box-shadow(0 0.5em 0.375em -0.375em $tertiary);
+}
+
+.comment-list li:last-of-type {
+	box-shadow: none;
+}
+
+article.comment,
+li.pingback p {
+	overflow: hidden;
+	position: relative;
+	margin-left: 1.5em;
+	padding: 1.5em 0;
+}
+
+.children article.comment,
+.children li.pingback {
+	padding-top: 1em;
+}
+
+.comment .avatar {
+	@include border-radius(1.875em);
+}
+
+.bypostauthor .comment .avatar {
+	border-color: $black-secondary;
+}
+
+.comment-meta,
+.comment-author {
+	@include font-size-16;
+	color: $silver;
+}
+
+.comment-metadata {
+	@include font-size-11;
+}
+
+.comment-author {
+	font-weight: 600;
+}
+
+.comment-author cite {
+	display: inline-block;
+	margin: 0 0 0 2.5em;
+	font-style: normal;
+}
+
+.comment-content {
+	@include font-size-16;
+	@include hyphens-auto;
+	@include border-radius(.3125em);
+	@include background-clip;
+	@include box-sizing(border-box);
+	padding: 0 .5em .5em;
+	background-color: $secondary;
+	box-shadow: inset 0 0 0 .0625em $tertiary;
+	word-wrap: break-word;
+}
+
+.comment-content a,
+.comment-contenta:visited {
+	color: $secondary;
+	text-decoration: none;
+}
+
+.comment-content a:hover,
+.comment-contenta:focus,
+.comment-content a:active {
+	color: $silver;
+	text-decoration: none;
+}
+
+.comment-content ul,
+.comment-content ol {
+	margin-bottom: 1.5em;
+}
+
+.comment-content ul li,
+.comment-content ol li {
+	list-style: disc;
+}
+
+.comment footer em {
+	@include font-size-16;
+	display: block;
+	margin-left: 6em;
+	color: $silver;
+}
+
+.comment .reply {
+	@include font-size-16;
+	margin-right: 2em;
+	font-weight: 600;
+}
+
+li.pingback {
+	@include font-size-16;
+	font-weight: 600;
+}
+
+li.pingback p {
+	margin-bottom: 0;
+}
+
+li.pingback a {
+	font-weight: normal;
+}
+
+/* Comment Form */
+
+#respond {
+	@include border-radius(0.975em);
+	@include background-clip;
+	margin-bottom: 1.5em;
+	padding: 1.5em;
+	border: 0.125em solid $black-secondary;
+	background: $white-secondary;
+}
+
+#respond #commentform {
+	margin-top: 1em;
+}
+
+.comment-notes,
+#commentform .form-allowed-tags,
+p.nocomments,
+.logged-in-as {
+	@include font-size-16;
+	color: $primary;
+}
+
+.required {
+	color: $red;
+}
+
+.says {
+	display: none;
+}
+
+#commentform {
+	color: $black-secondary;
+}
+
+#commentform .comment-form-author input,
+#commentform .comment-form-email input,
+#commentform .comment-form-url input,
+#commentform .comment-form-comment input {
+	margin: 0;
+}
+
+#commentform .comment-form-comment {
+	color: $highlight-link;
+}
+
+#commentform .form-allowed-tags,
+#commentform .form-allowed-tags code {
+	color: $black-secondary;
+	font-size: 1em;
+}
+
+p.nocomments {
+	margin: 2.5em;
+}
+
+.comment-reply-link {
+	color: $highlight-link;
+	text-decoration: none;
+	margin-left: 1em;
+}
+
+#cancel-comment-reply-link {
+	@include font-size-16;
+	float: right;
+	cursor: pointer;
+    /* Improves usability and consistency of cursor style between image-type 'input' and others */
+	-webkit-appearance: button;
+	-moz-appearance: button;
+    /* Corrects inability to style click-able 'input' types in iOS */
+}
+
+#cancel-comment-reply-link:hover {
+	color: $primary;
+}
+
+#respond textarea {
+	@include font-size-16;
+	color: $primary;
+	font-family: $font-sans-serif;
+}
+
+.form-submit input[type="submit"] {
+	@include box-shadow(0 0.5em 0.375em -0.375em $tertiary);
+	border: 0;
+	background: $white-secondary;
+	color: $black-secondary;
+	font-family: $font-sans-serif;
+}
+
+.form-submit input[type="submit"]:hover {
+	@include box-shadow(0 0.5em 0.375em -0.375em $primary);
+}
+
+.form-submit input[type="submit"]:focus,
+.form-submit input[type="submit"]:active {
+	@include box-shadow(0 0.5em 0.375em -0.375em $tertiary);
+}

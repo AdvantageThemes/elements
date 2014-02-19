@@ -1,0 +1,39 @@
+/* =WP Front-End Editor
+----------------------------------------------- */
+// use of !important is necessary because this plugin loads last.
+
+#wpadminbar {
+	@include box-shadow(0 .5em .375em -0.375em $secondary);
+	min-height: 2em;
+	background-color: $primary;
+}
+
+#wpadminbar .menupop .ab-sub-wrapper {
+	@include box-shadow(0 .1875em .3125em $secondary);
+}
+
+#wpadminbar #wp-admin-bar-top-secondary {
+	background-color: transparent !important;
+}
+
+#wpadminbar #wp-admin-bar-wp-fee-close,
+#wpadminbar #wp-admin-bar-wp-fee-backend {
+	background-color: transparent !important;
+}
+
+#wpadminbar #wp-admin-bar-top-secondary li a:hover {
+	background-color: transparent !important;
+}
+
+
+#wpadminbar .quicklinks {
+	border-left: 0;
+}
+
+#wpadminbar .quicklinks button {
+	box-shadow: none;
+}
+
+#wpadminbar .quicklinks button:hover {
+	background-color: transparent !important;
+}

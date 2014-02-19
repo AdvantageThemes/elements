@@ -1,0 +1,391 @@
+/* =Genericons
+----------------------------------------------- */
+
+.entry-date::before,
+.byline::before,
+.comment-meta a time::before,
+.nav-previous::before,
+.nav-next::after,
+.comment-reply-link::after,
+.entry-meta .cat-links::after,
+.entry-meta .tags-links::after,
+.entry-meta .comments-link::after,
+.post-edit-link::after,
+.entry-meta .bookmark-permalink::after,
+.search-results .entry-title::before,
+.entry-content .more-link::after,
+.category-sticky .entry-meta .cat-links::after,
+.author .site-main li::before,
+.widget_archive li::before,
+.widget_categories li::before,
+.widget_meta li::before,
+.widget_pages li::before,
+.widget_recent_entries li::before,
+.widget_recent_comments li::before,
+.rss-date::before,
+.widget_rss li::before {
+	@include genericon-primary;
+	color: $icon-primary;
+}
+
+.widget_rss li::before {
+	content: "\f413";
+	color: $silver;
+	padding-right: .25em;
+}
+
+.rss-date::before {
+	content: "\f307";
+	padding-right: .25em;
+	margin-left: .25em;
+}
+
+.widget_recent_comments li::before {
+	content: "\f300";
+	padding-right: .25em;
+}
+
+.widget_recent_entries li::before {
+	content: "\f456";
+	padding-right: .25em;
+}
+
+.widget_pages li::before {
+	content: "\f443";
+	padding-right: .25em;
+}
+
+.widget_meta li::before {
+	content: "\f427";
+	padding-right: .25em;
+}
+
+.widget_categories li::before {
+	content: "\f301";
+	padding-right: .25em;
+}
+
+.widget_archive li::before {
+	content: "\f307";
+	padding-right: .25em;
+}
+
+.author .site-main li::before {
+	content: "\f425";
+	font: normal 2em/1 'Genericons';
+}
+
+.entry-date::before {
+	content: "\f307";
+	margin-left: .5em;
+	padding-right: .25em;
+}
+
+.byline::before {
+	content: "\f304";
+	margin-left: .5em;
+}
+
+.comment-meta a time::before {
+	content: "\f303";
+}
+
+.nav-previous .meta-nav {
+	display: none;
+}
+
+.nav-previous::before {
+	content: "\f430";
+	font: normal 2em/1 'Genericons';
+	text-shadow: $icon-primary 0 0 .2em;
+}
+
+.nav-next .meta-nav {
+	display: none;
+}
+
+.nav-next::after {
+	content: "\f429";
+	font: normal 2em/1 'Genericons';
+	text-shadow: $icon-primary 0 0 .2em;
+}
+
+.comment-reply-link::after {
+	content: "\f412";
+	padding-left: .25em;
+}
+
+.entry-meta .cat-links::after {
+	content: "\f301";
+	margin-right: .5em;
+}
+
+.entry-meta .tags-links::after {
+	content: "\f302";
+	margin-right: .5em;
+}
+
+.entry-meta .comments-link::after {
+	content: "\f300";
+	margin-right: .5em;
+	padding-left: .25em;
+}
+
+.post-edit-link::after {
+	content: "\f411";
+	padding-left: .25em;
+}
+
+.entry-meta .bookmark-permalink::after {
+	content: "\f444";
+	margin-right: .5em;
+	padding-left: .25em;
+}
+
+.search-results .entry-title::before {
+	content: "\f400";
+	margin: 0 .5em;
+	text-shadow: $white-secondary.1em .1em .2em;
+}
+
+.entry-content .more-link::after {
+	content: "\f429";
+	font: normal 2em/1 'Genericons';
+	text-shadow: $icon-primary 0 0 .2em;
+}
+
+.category-sticky .entry-meta .cat-links::after {
+	content: "\f308";
+}
+
+// Post Formats - Categories - icons in the meta
+.format-standard .entry-meta .cat-links::after,
+.format-video .entry-meta .cat-links::after,
+.format-audio .entry-meta .cat-links::after,
+.format-image .entry-meta .cat-links::after,
+.format-quote .entry-meta .cat-links::after,
+.format-gallery .entry-meta .cat-links::after,
+.format-aside .entry-meta .cat-links::after,
+.format-link .entry-meta .cat-links::after,
+.format-status .entry-meta .cat-links::after,
+.format-chat .entry-meta .cat-links::after {
+	@include genericon-primary;
+	color: $icon-primary;
+}
+
+.format-standard .entry-meta .cat-links::after {
+	content: "\f301";
+}
+
+.format-video .entry-meta .cat-links::after {
+	content: "\f104";
+}
+
+.format-audio .entry-meta .cat-links::after {
+	content: "\f109";
+}
+
+.format-image .entry-meta .cat-links::after {
+	content: "\f102";
+}
+
+.format-quote .entry-meta .cat-links::after {
+	content: "\f106";
+}
+
+.format-gallery .entry-meta .cat-links::after {
+	content: "\f103";
+}
+
+.format-aside .entry-meta .cat-links::after {
+	content: "\f425";
+}
+
+.format-link .entry-meta .cat-links::after {
+	content: "\f107";
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.format-status .entry-meta .cat-links::after {
+	content: "\f455";
+}
+
+.format-chat .entry-meta .cat-links::after {
+	content: "\f108";
+}
+
+// Post Formats - Individual Posts - Icons in the posts
+.format-link .entry-content p a::after,
+.format-status .entry-content p:first-child::after,
+.format-aside .entry-content p:first-child::before,
+.format-audio .entry-content p a::after,
+.format-video .entry-content p a::after {
+@include genericon-primary;
+color: $icon-primary;
+}
+
+.format-video .entry-content p a::after{
+	content: "\f104";
+	font: normal 2em/1 'Genericons';
+	text-shadow: $icon-primary 0 0 .2em;
+}
+
+.format-audio .entry-content p a::after{
+	content: "\f109";
+	font: normal 2em/1 'Genericons';
+	text-shadow: $icon-primary 0 0 .2em;
+}
+
+.format-link .entry-content p a::after {
+	content: "\f107";
+	font: normal 2em/1 'Genericons';
+	text-shadow: $icon-primary 0 0 .2em;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.format-status .entry-content p:first-child::after {
+	content: "\f455";
+	padding-left: .1875em;
+	font: normal 2em/1 'Genericons';
+	text-shadow: $icon-primary 0 0 .2em;
+}
+
+.format-aside .entry-content p:first-child::before {
+	content: "\f425";
+	font: normal 2em/1 'Genericons';
+	text-shadow: $icon-primary 0 0 .2em;
+}
+
+// Social icons for categories - these categories must be created by the user.
+// For example, create a category called "Twitter"
+.category-github .entry-meta .cat-links::after,
+.category-dribbble .entry-meta .cat-links::after,
+.category-twitter .entry-meta .cat-links::after,
+.category-facebook .entry-meta .cat-links::after,
+.category-wordpress .entry-meta .cat-links::after,
+.category-google-plus .entry-meta .cat-links::after,
+.category-linkedin .entry-meta .cat-links::after,
+.category-pinterest .entry-meta .cat-links::after,
+.category-flickr .entry-meta .cat-links::after,
+.category-vimeo .entry-meta .cat-links::after,
+.category-youtube .entry-meta .cat-links::after,
+.category-tumblr .entry-meta .cat-links::after,
+.category-instagram .entry-meta .cat-links::after,
+.category-codepen .entry-meta .cat-links::after,
+.category-polldaddy .entry-meta .cat-links::after,
+.category-skype .entry-meta .cat-links::after,
+.category-reddit .entry-meta .cat-links::after,
+.category-stumbleupon .entry-meta .cat-links::after,
+.category-dropbox .entry-meta .cat-links::after,
+.category-portfolio .entry-meta .cat-links::after {
+	@include genericon-primary;
+	color: $icon-primary;
+}
+
+.category-github .entry-meta .cat-links::after {
+	content: '\f200';
+	margin-right: .5em;
+}
+
+.category-dribbble .entry-meta .cat-links::after {
+	content: '\f201';
+	margin-right: .5em;
+}
+
+.category-twitter .entry-meta .cat-links::after {
+	content: '\f202';
+	margin-right: .5em;
+}
+
+.category-facebook .entry-meta .cat-links::after {
+	content: '\f203';
+	margin-right: .5em;
+}
+
+.category-wordpress .entry-meta .cat-links::after {
+	content: '\f205';
+	margin-right: .5em;
+}
+
+.category-google-plus .entry-meta .cat-links::after {
+	content: '\f218';
+	margin-right: .5em;
+}
+
+.category-linkedin .entry-meta .cat-links::after {
+	content: '\f207';
+	margin-right: .5em;
+}
+
+.category-pinterest .entry-meta .cat-links::after {
+	content: '\f209';
+	margin-right: .5em;
+}
+
+.category-flickr .entry-meta .cat-links::after {
+	content: '\f211';
+	margin-right: .5em;
+}
+
+.category-vimeo .entry-meta .cat-links::after {
+	content: '\f212';
+	margin-right: .5em;
+}
+
+.category-youtube .entry-meta .cat-links::after {
+	content: '\f213';
+	margin-right: .5em;
+}
+
+.category-tumblr .entry-meta .cat-links::after {
+	content: '\f214';
+	margin-right: .5em;
+}
+
+.category-instagram .entry-meta .cat-links::after {
+	content: '\f215';
+	margin-right: .5em;
+}
+
+.category-codepen .entry-meta .cat-links::after {
+	content: '\f216';
+	margin-right: .5em;
+}
+
+.category-polldaddy .entry-meta .cat-links::after {
+	content: '\f217';
+	margin-right: .5em;
+}
+
+.category-skype .entry-meta .cat-links::after {
+	content: '\f220';
+	margin-right: .5em;
+}
+
+.category-reddit .entry-meta .cat-links::after {
+	content: '\f222';
+	margin-right: .5em;
+}
+
+.category-stumbleupon .entry-meta .cat-links::after {
+	content: '\f223';
+	margin-right: .5em;
+}
+
+.category-dropbox .entry-meta .cat-links::after {
+	content: '\f225';
+	margin-right: .5em;
+}
+
+.category-portfolio .entry-meta .cat-links::after {
+	content: '\f460';
+	margin-right: .5em;
+}

@@ -1,0 +1,45 @@
+/* =Search Form
+----------------------------------------------- */
+
+.search-form {
+	display: inline-block;
+}
+
+.search-form .search-field {
+	@include box-sizing(border-box);
+	@include border-radius(.3125em);
+	min-height: 2.5em;
+	max-width: 20em;
+	padding: .4375em;
+	border: .125em solid $white;
+	background-color: $white-secondary;
+	color: $primary;
+	font-family: $font-sans-serif;
+	text-shadow: $black-text-shadow;
+}
+
+.search-form input[type="submit"] {
+	@include font-size-13;
+	@include box-sizing(border-box);
+	@include border-radius(.3125em);
+	padding: .4375em;
+	border: .125em solid $white;
+	background-color: $white-secondary;
+	color: $primary;
+	font-family: $font-sans-serif;
+	text-shadow: $black-text-shadow;
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-ms-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+
+.search-form input[type="submit"]:hover {
+	color: $highlight-link;
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-ms-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
