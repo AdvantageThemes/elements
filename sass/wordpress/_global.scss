@@ -42,9 +42,9 @@ h4,
 h5,
 h6 {
 	clear: both;
+	text-shadow: $black-text-shadow;
 	font-weight: 700;
 	font-family: $font-serif;
-	text-shadow: $black-text-shadow;
 }
 
 @include h1;
@@ -82,8 +82,8 @@ h6 a:hover {
 #reply-title,
 .comments-title {
 	@include font-size-20;
-	color: $white-secondary;
 	@include hyphens-none;
+	color: $white-secondary;
 	word-wrap: break-word;
 }
 
@@ -93,23 +93,23 @@ h6 a:hover {
 
 .site-title {
 	@include font-size-42;
-	color: $white-secondary;
 	@include hyphens-none;
+	color: $white-secondary;
 	word-wrap: break-word;
 }
 
 .site-description {
 	@include font-size-26;
-	color: $white-secondary;
 	@include hyphens-auto;
+	color: $white-secondary;
 	word-wrap: break-word;
 }
 
 hr {
 	display: block;
-	height: .0625em;
 	margin: 1em 0;
 	padding: 0;
+	height: .0625em;
 	border: 0;
 	border-top: .0625em solid hsla(0, 0, 80%, 1.0);
 }
@@ -210,9 +210,9 @@ pre {
 	@include hyphens-none;
 	@include wrap;
 	overflow: auto;
-	max-width: 100%;
 	margin: 0;
 	padding: 1.5em;
+	max-width: 100%;
 	border: .125em solid $black-secondary;
 	background: $white-secondary;
 	color: $black-secondary;
@@ -231,8 +231,8 @@ samp {
 
 abbr,
 acronym {
-	cursor: help;
 	border-bottom: .0625em dotted hsla(0, 0, 100%, 1.0);
+	cursor: help;
 }
 
 ins {
@@ -241,8 +241,8 @@ ins {
 }
 
 table {
-	width: 100%;
 	margin: 0 0 1.5em;
+	width: 100%;
 }
 
 th {
@@ -250,11 +250,11 @@ th {
 }
 
 img {
-	vertical-align: middle;
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
 	margin: auto;
+	max-width: 100%; /* Adhere to container width. */
+	height: auto; /* Make sure images are scaled correctly. */
 	border: 0;
+	vertical-align: middle;
 	-ms-interpolation-mode: bicubic;
 }
 
@@ -459,8 +459,8 @@ td a:active {
 
 #page {
 	@include container (75em);
-	padding-left: 1em;
 	padding-right: 1em;
+	padding-left: 1em;
 	background: transparent;
 }
 
@@ -499,9 +499,9 @@ td a:active {
 
 #colophon {
 	@include container (75em);
-	padding-left: 1em;
-	padding-right: 1em;
 	margin-bottom: 40px;
+	padding-right: 1em;
+	padding-left: 1em;
 }
 
 #footer-navigation {

@@ -54,51 +54,51 @@ h4,
 h5,
 h6 {
   clear: both;
+  text-shadow: #333333 0.1em 0.1em 0.2em;
   font-weight: 700;
   font-family: Cambria, Georgia, Times, "Times New Roman", serif;
-  text-shadow: #333333 0.1em 0.1em 0.2em;
 }
 
 h1 {
-  font-size: 2.625em;
-  line-height: 1.1429em;
   margin-top: .5714em;
   margin-bottom: 0;
+  font-size: 2.625em;
+  line-height: 1.1429em;
 }
 
 h2 {
-  font-size: 1.625em;
-  line-height: 1.8462em;
   margin-top: .9231em;
   margin-bottom: 0;
+  font-size: 1.625em;
+  line-height: 1.8462em;
 }
 
 h3 {
-  font-size: 1.25em;
-  line-height: 1.2em;
   margin-top: 1.2em;
   margin-bottom: 0;
+  font-size: 1.25em;
+  line-height: 1.2em;
 }
 
 h4 {
-  font-size: 1em;
-  line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 h5 {
-  font-size: .8125em;
-  line-height: 1.8462em;
   margin-top: 1.8462em;
   margin-bottom: 0;
+  font-size: .8125em;
+  line-height: 1.8462em;
 }
 
 h6 {
-  font-size: .6875em;
-  line-height: 2.1818em;
   margin-top: 2.1818em;
   margin-bottom: 0;
+  font-size: .6875em;
+  line-height: 2.1818em;
 }
 
 h1 a,
@@ -128,15 +128,15 @@ h6 a:hover {
 .widget-title,
 #reply-title,
 .comments-title {
-  font-size: 1.25em;
-  line-height: 1.2em;
   margin-top: 1.2em;
   margin-bottom: 0;
-  color: #dbdbdb;
+  font-size: 1.25em;
+  line-height: 1.2em;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+  color: #dbdbdb;
   word-wrap: break-word;
 }
 
@@ -145,46 +145,46 @@ h6 a:hover {
 }
 
 .site-title {
-  font-size: 2.625em;
-  line-height: 1.1429em;
   margin-top: .5714em;
   margin-bottom: 0;
-  color: #dbdbdb;
+  font-size: 2.625em;
+  line-height: 1.1429em;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+  color: #dbdbdb;
   word-wrap: break-word;
 }
 
 .site-description {
-  font-size: 1.625em;
-  line-height: 1.8462em;
   margin-top: .9231em;
   margin-bottom: 0;
-  color: #dbdbdb;
+  font-size: 1.625em;
+  line-height: 1.8462em;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
+  color: #dbdbdb;
   word-wrap: break-word;
 }
 
 hr {
   display: block;
-  height: .0625em;
   margin: 1em 0;
   padding: 0;
+  height: .0625em;
   border: 0;
   border-top: 0.0625em solid #cccccc;
 }
 
 /* Text Elements */
 p {
-  font-size: 1em;
-  line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5em;
   font-weight: 300;
   font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -196,10 +196,10 @@ b {
 
 ul,
 ol {
-  font-size: 1em;
-  line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 ul {
@@ -248,10 +248,10 @@ q::after {
 }
 
 blockquote {
-  font-size: 1.25em;
-  line-height: 1.2em;
   margin-top: 1.2em;
   margin-bottom: 0;
+  font-size: 1.25em;
+  line-height: 1.2em;
   color: #bfbfbf;
   font-weight: 300;
   font-style: italic;
@@ -259,10 +259,10 @@ blockquote {
 
 blockquote cite,
 blockquote small {
-  font-size: 1em;
-  line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5em;
   color: #66707a;
   font-weight: 400;
 }
@@ -283,10 +283,10 @@ address {
 }
 
 pre {
-  font-size: 1em;
-  line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5em;
   -moz-border-radius: 0.9375em;
   -webkit-border-radius: 0.9375em;
   border-radius: 0.9375em;
@@ -305,9 +305,9 @@ pre {
   white-space: pre-wrap;
   word-wrap: break-word;
   overflow: auto;
-  max-width: 100%;
   margin: 0;
   padding: 1.5em;
+  max-width: 100%;
   border: 0.125em solid #333333;
   background: #dbdbdb;
   color: #333333;
@@ -319,10 +319,10 @@ kbd,
 tt,
 var,
 samp {
-  font-size: .8125em;
-  line-height: 1.8462em;
   margin-top: 1.8462em;
   margin-bottom: 0;
+  font-size: .8125em;
+  line-height: 1.8462em;
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
@@ -332,8 +332,8 @@ samp {
 
 abbr,
 acronym {
-  cursor: help;
   border-bottom: 0.0625em dotted white;
+  cursor: help;
 }
 
 ins {
@@ -342,8 +342,8 @@ ins {
 }
 
 table {
-  width: 100%;
   margin: 0 0 1.5em;
+  width: 100%;
 }
 
 th {
@@ -351,13 +351,13 @@ th {
 }
 
 img {
-  vertical-align: middle;
-  height: auto;
-  /* Make sure images are scaled correctly. */
+  margin: auto;
   max-width: 100%;
   /* Adhere to container width. */
-  margin: auto;
+  height: auto;
+  /* Make sure images are scaled correctly. */
   border: 0;
+  vertical-align: middle;
   -ms-interpolation-mode: bicubic;
 }
 
@@ -365,10 +365,10 @@ button,
 input,
 select,
 textarea {
-  font-size: 1em;
-  line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5em;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -390,10 +390,10 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  font-size: 1em;
-  line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5em;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -450,10 +450,10 @@ input[type="password"],
 input[type="search"],
 input[type="url"],
 textarea {
-  font-size: 1em;
-  line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5em;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -559,16 +559,16 @@ td a:active {
 }
 
 .aligncenter {
-  clear: both;
   display: block;
+  clear: both;
   margin: 0 auto;
 }
 
 /* Accessibility */
 /* Text meant only for screen readers */
 .screen-reader-text {
-  clip: rect(0.0625em, 0.0625em, 0.0625em, 0.0625em);
   position: absolute;
+  clip: rect(0.0625em, 0.0625em, 0.0625em, 0.0625em);
 }
 
 .screen-reader-text:hover,
@@ -580,21 +580,21 @@ td a:active {
   -moz-box-shadow: 0 0 0.9375em 0.9375em #545454;
   -webkit-box-shadow: 0 0 0.9375em 0.9375em #545454;
   box-shadow: 0 0 0.9375em 0.9375em #545454;
-  display: block;
-  clip: auto;
-  width: auto;
-  height: auto;
   top: .3125em;
   left: .3125em;
-  padding: .9375em 1.4375em .875em;
   z-index: 100000;
   /* Above WP toolbar */
+  display: block;
+  clip: auto;
+  padding: .9375em 1.4375em .875em;
+  width: auto;
+  height: auto;
   background-color: #dbdbdb;
   color: #333333;
+  text-decoration: none;
   font-weight: 600;
   font-size: 0.875em;
   line-height: normal;
-  text-decoration: none;
 }
 
 /* Clearing */
@@ -649,8 +649,8 @@ td a:active {
 .navigation-footer:after,
 #site-doc:before,
 #site-doc:after {
-  content: "";
   display: table;
+  content: "";
 }
 .entry-content:after,
 .content-area:after,
@@ -722,8 +722,8 @@ td a:active {
   max-width: 75em;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1em;
   padding-right: 1em;
+  padding-left: 1em;
   background: transparent;
 }
 #page::after {
@@ -783,9 +783,9 @@ td a:active {
   max-width: 75em;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1em;
-  padding-right: 1em;
   margin-bottom: 40px;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 #colophon::after {
   content: " ";
@@ -859,8 +859,8 @@ td a:active {
 ----------------------------------------------- */
 .site-content {
   position: relative;
-  clear: both;
   z-index: 4;
+  clear: both;
   background: transparent;
 }
 
@@ -906,15 +906,15 @@ td a:active {
 }
 
 .post-label {
-  font-size: 1em;
-  line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5em;
   display: inline-block;
-  opacity: .5;
   color: green;
-  font-weight: 600;
   text-transform: uppercase;
+  font-weight: 600;
+  opacity: .5;
 }
 
 .page-header {
@@ -922,10 +922,10 @@ td a:active {
 }
 
 .taxonomy-description {
-  font-size: 1em;
-  line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5em;
   -moz-border-radius: 0.9375em;
   -webkit-border-radius: 0.9375em;
   border-radius: 0.9375em;
@@ -940,10 +940,10 @@ td a:active {
 }
 
 .entry-meta {
-  font-size: 1em;
-  line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5em;
   clear: both;
 }
 
@@ -1035,10 +1035,10 @@ td a:active {
 }
 
 .entry-title {
-  font-size: 1.625em;
-  line-height: 1.8462em;
   margin-top: .9231em;
   margin-bottom: 0;
+  font-size: 1.625em;
+  line-height: 1.8462em;
 }
 
 .entry-title a {
@@ -1046,10 +1046,10 @@ td a:active {
 }
 
 .page-title {
-  font-size: 1.625em;
-  line-height: 1.8462em;
   margin-top: .9231em;
   margin-bottom: 0;
+  font-size: 1.625em;
+  line-height: 1.8462em;
   text-transform: uppercase;
 }
 
@@ -1071,10 +1071,10 @@ td a:active {
 .entry-content,
 .content-area,
 .entry-summary {
-  font-size: 1em;
-  line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5em;
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
@@ -1083,10 +1083,10 @@ td a:active {
 }
 
 .sub-pages {
-  font-size: .8125em;
-  line-height: 1.8462em;
   margin-top: 1.8462em;
   margin-bottom: 0;
+  font-size: .8125em;
+  line-height: 1.8462em;
   padding: 1.8462em 0;
   border-width: .25em 0;
 }
@@ -1102,8 +1102,8 @@ td a:active {
 
 .entry-content table,
 .comment-content table {
-  width: 100%;
   margin: 0 .077em 1.923em 0;
+  width: 100%;
   text-align: left;
 }
 
@@ -1111,13 +1111,13 @@ td a:active {
 .entry-content thead th,
 .comment-content tr th,
 .comment-content thead th {
-  font-size: 1em;
-  line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5em;
   padding: 1em;
-  font-weight: 700;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .entry-content tr td,
@@ -1179,9 +1179,9 @@ html input[type="submit"] {
 }
 
 .author .site-main li a {
-  cursor: pointer;
-  color: #00678a;
   box-shadow: none;
+  color: #00678a;
+  cursor: pointer;
 }
 
 .author .site-main li a:hover {
@@ -1202,21 +1202,21 @@ html input[type="submit"] {
 
 .format-quote .entry-title,
 .format-quote .entry-title a {
-  font-size: 1.625em;
-  line-height: 1.8462em;
   margin-top: .9231em;
   margin-bottom: 0;
+  font-size: 1.625em;
+  line-height: 1.8462em;
   color: #bfbfbf;
-  font-family: Cambria, Georgia, Times, "Times New Roman", serif;
   text-transform: uppercase;
+  font-family: Cambria, Georgia, Times, "Times New Roman", serif;
 }
 
 .format-quote p,
 .format-quote blockquote {
-  font-size: 1em;
-  line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5em;
   color: #bfbfbf;
   font-style: italic;
 }
@@ -1252,13 +1252,13 @@ html input[type="submit"] {
   -moz-box-shadow: 0.1em 0.1em 0.2em #dbdbdb;
   -webkit-box-shadow: 0.1em 0.1em 0.2em #dbdbdb;
   box-shadow: 0.1em 0.1em 0.2em #dbdbdb;
-  height: auto;
+  margin: 0;
+  padding: 0;
   max-width: -moz-calc(100% - .375em);
   max-width: -webkit-calc(100% - .375em);
   max-width: -o-calc(100% - .375em);
   max-width: calc(100% - .375em);
-  margin: 0;
-  padding: 0;
+  height: auto;
   border: 0.0625em solid #66707a;
 }
 
@@ -1293,15 +1293,15 @@ html input[type="submit"] {
 .single-format-chat .chat-author::before {
   display: inline-block;
   vertical-align: middle;
+  text-decoration: inherit;
   font: normal 1em/1 'Genericons';
   font-weight: normal;
   font-style: normal;
-  text-decoration: inherit;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: "\f108";
   padding-right: .1875em;
   color: #32404e;
+  content: "\f108";
 }
 
 /* Asides */
@@ -1319,8 +1319,8 @@ html input[type="submit"] {
 }
 
 .aside-permalink a {
-  cursor: pointer;
   color: #00678a;
+  cursor: pointer;
 }
 
 .aside-permalink a:hover {
@@ -1342,8 +1342,8 @@ html input[type="submit"] {
 }
 
 .status-permalink a {
-  cursor: pointer;
   color: #00678a;
+  cursor: pointer;
 }
 
 .status-permalink a:hover {
@@ -1361,9 +1361,9 @@ html input[type="submit"] {
 }
 
 .format-link .entry-content p a {
-  cursor: pointer;
   box-shadow: none;
   color: #00678a;
+  cursor: pointer;
 }
 
 .format-link .entry-content p a:hover {
@@ -1385,9 +1385,9 @@ html input[type="submit"] {
 }
 
 .format-audio .entry-content p a {
-  cursor: pointer;
   box-shadow: none;
   color: #00678a;
+  cursor: pointer;
 }
 
 .format-audio .entry-content p a:hover {
@@ -1405,9 +1405,9 @@ html input[type="submit"] {
 }
 
 .format-video .entry-content p a {
-  cursor: pointer;
   box-shadow: none;
   color: #00678a;
+  cursor: pointer;
 }
 
 .format-video .entry-content p a:hover {
@@ -1418,12 +1418,12 @@ html input[type="submit"] {
   -moz-box-shadow: 0.3125em 0.3125em 0.3125em rgba(255, 255, 255, 0.1);
   -webkit-box-shadow: 0.3125em 0.3125em 0.3125em rgba(255, 255, 255, 0.1);
   box-shadow: 0.3125em 0.3125em 0.3125em rgba(255, 255, 255, 0.1);
+  margin: 0;
+  padding: 0;
   max-width: -moz-calc(100% - .375em);
   max-width: -webkit-calc(100% - .375em);
   max-width: -o-calc(100% - .375em);
   max-width: calc(100% - .375em);
-  margin: 0;
-  padding: 0;
   border: 0.1875em double #32404e;
 }
 
@@ -1444,11 +1444,11 @@ img.size-thumbnail {
   -o-background-clip: padding-box;
   -webkit-background-clip: padding;
   background-clip: padding-box;
-  height: auto;
   max-width: -moz-calc(100% - .375em);
   max-width: -webkit-calc(100% - .375em);
   max-width: -o-calc(100% - .375em);
   max-width: calc(100% - .375em);
+  height: auto;
   border: 0.1875em double #333333;
 }
 
@@ -1460,14 +1460,14 @@ img.size-thumbnail {
   -o-background-clip: padding-box;
   -webkit-background-clip: padding;
   background-clip: padding-box;
-  height: auto;
+  margin: 0;
+  padding: 0;
   max-width: -moz-calc(100% - .375em);
   max-width: -webkit-calc(100% - .375em);
   max-width: -o-calc(100% - .375em);
   max-width: calc(100% - .375em);
+  height: auto;
   border: 0.1875em double #32404e;
-  margin: 0;
-  padding: 0;
 }
 
 .header-image img {
@@ -1481,14 +1481,14 @@ img.size-thumbnail {
   -moz-box-shadow: 0.3125em 0.3125em 0.3125em rgba(255, 255, 255, 0.1);
   -webkit-box-shadow: 0.3125em 0.3125em 0.3125em rgba(255, 255, 255, 0.1);
   box-shadow: 0.3125em 0.3125em 0.3125em rgba(255, 255, 255, 0.1);
-  height: auto;
+  margin: 0;
+  padding: 0;
   max-width: -moz-calc(100% - .375em);
   max-width: -webkit-calc(100% - .375em);
   max-width: -o-calc(100% - .375em);
   max-width: calc(100% - .375em);
+  height: auto;
   border: 0.1875em double #32404e;
-  margin: 0;
-  padding: 0;
 }
 
 .wp-caption {
@@ -1562,8 +1562,8 @@ img.alignnone {
   box-sizing: border-box;
   margin: auto;
   color: #dbdbdb;
-  font-family: Cambria, Georgia, Times, "Times New Roman", serif;
   text-align: center;
+  font-family: Cambria, Georgia, Times, "Times New Roman", serif;
 }
 
 .wp-caption .wp-caption-text {
@@ -1571,18 +1571,18 @@ img.alignnone {
 }
 
 .wp-caption-dd {
-  font-size: 1em;
-  line-height: 1.5em;
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5em;
   font-family: Cambria, Georgia, Times, "Times New Roman", serif;
 }
 
 .gallery-caption {
   margin: auto;
   color: #dbdbdb;
-  font-family: Cambria, Georgia, Times, "Times New Roman", serif;
   text-align: center;
+  font-family: Cambria, Georgia, Times, "Times New Roman", serif;
 }
 
 .site-main .gallery {
@@ -1626,15 +1626,15 @@ video {
 
 /* Video */
 .video-wrapper .video-player {
-  height: auto !important;
-  max-width: 650px;
   margin: 0 auto 1.25em auto;
   padding: 0;
+  max-width: 650px;
+  height: auto !important;
 }
 
 .videopress-placeholder {
-  height: auto !important;
   max-width: 100%;
+  height: auto !important;
 }
 
 /* Audio */

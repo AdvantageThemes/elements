@@ -58,8 +58,8 @@
 
 article.comment,
 li.pingback p {
-	overflow: hidden;
 	position: relative;
+	overflow: hidden;
 	margin-left: 1.5em;
 	padding: 1.5em 0;
 }
@@ -215,9 +215,9 @@ p.nocomments {
 }
 
 .comment-reply-link {
+	margin-left: 1em;
 	color: $highlight-link;
 	text-decoration: none;
-	margin-left: 1em;
 }
 
 #cancel-comment-reply-link {

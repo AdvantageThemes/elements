@@ -4,9 +4,9 @@
 .widget {
 	@include font-size-13;
 	@include hyphens-auto;
-	word-wrap: break-word;
 	padding: 1em;
 	background: transparent;
+	word-wrap: break-word;
 }
 
 .widget a {
@@ -157,8 +157,8 @@
 
 /* Gravatar Widget */
 .widget-grofile img {
-	height: auto;
 	max-width: 100%;
+	height: auto;
 }
 
 /* Search Widget */
@@ -167,8 +167,8 @@
 }
 
 .widget_search .search-form input[type="search"] {
-	width: 15em;
 	padding: .3em;
+	width: 15em;
 	text-shadow: $black-text-shadow;
 }
 
@@ -261,9 +261,9 @@
 
 .widget_authors img {
 	float: left;
-	vertical-align: text-top;
 	margin-bottom: 1em;
 	padding-right: .833em;
+	vertical-align: text-top;
 }
 
 /* Calendar Widget */
@@ -286,16 +286,16 @@
 #wp-calendar caption {
 	margin-bottom: .5em;
 	color: $white-secondary;
-	font-style: italic;
 	text-shadow: $highlight-link .1em .1em .2em;
+	font-style: italic;
 }
 
 #wp-calendar thead th {
 	@include font-size-16;
 	padding-top: 1.154em;
 	padding-bottom: 1.154em;
-	font-weight: 600;
 	text-align: center;
+	font-weight: 600;
 }
 
 #wp-calendar tbody td {
@@ -313,8 +313,8 @@
 	@include border-radius(50%);
 	@include filter-gradient(#45484d, #000000, vertical);
 	@include background-image(linear-gradient(top,  hsla(218,5%,29%,1) 0%,hsla(0,0%,0%,1) 100%));
-	cursor: pointer;
 	background-color: #45484d;
+	cursor: pointer;
 }
 
 #wp-calendar tfoot #next {
@@ -322,9 +322,9 @@
 }
 
 #wp-calendar #today {
-	cursor: pointer;
 	background: none;
 	font-weight: 700;
+	cursor: pointer;
 }
 
 #wp-calendar #prev,
@@ -365,8 +365,8 @@ td.recentcommentsavatartop {
 
 .widget_recent_comments td.recentcommentstexttop,
 .widget_recent_comments td.recentcommentstextend {
-	vertical-align: top;
 	padding: 0 .615em 1.1em;
+	vertical-align: top;
 }
 
 /* Text Widget */
@@ -475,8 +475,8 @@ td.recentcommentsavatartop {
 
 // these settings should be exactly the same as #sidebar-right found in _global.scss under - structure
 #content #widget-content-message {
-	width: 32.20339%;
 	margin-right: 0;
+	width: 32.20339%;
 	color: $secondary;
 }
 

@@ -95,16 +95,15 @@
 .page-links {
 	@include font-size-16;
 	clear: both;
-	text-transform: lowercase;
 	color: $highlight-link;
-
+	text-transform: lowercase;
 }
 
 .page-links a {
 	display: inline-block;
-	cursor: pointer;
 	background-color: transparent;
 	color: $white-secondary;
+	cursor: pointer;
 }
 
 .page-links a:hover {

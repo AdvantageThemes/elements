@@ -29,61 +29,61 @@
 }
 
 .widget_rss li::before {
-	content: "\f413";
-	color: $silver;
 	padding-right: .25em;
+	color: $silver;
+	content: "\f413";
 }
 
 .rss-date::before {
-	content: "\f307";
-	padding-right: .25em;
 	margin-left: .25em;
+	padding-right: .25em;
+	content: "\f307";
 }
 
 .widget_recent_comments li::before {
-	content: "\f300";
 	padding-right: .25em;
+	content: "\f300";
 }
 
 .widget_recent_entries li::before {
-	content: "\f456";
 	padding-right: .25em;
+	content: "\f456";
 }
 
 .widget_pages li::before {
-	content: "\f443";
 	padding-right: .25em;
+	content: "\f443";
 }
 
 .widget_meta li::before {
-	content: "\f427";
 	padding-right: .25em;
+	content: "\f427";
 }
 
 .widget_categories li::before {
-	content: "\f301";
 	padding-right: .25em;
+	content: "\f301";
 }
 
 .widget_archive li::before {
-	content: "\f307";
 	padding-right: .25em;
+	content: "\f307";
 }
 
 .author .site-main li::before {
-	content: "\f425";
 	font: normal 2em/1 'Genericons';
+	content: "\f425";
 }
 
 .entry-date::before {
-	content: "\f307";
 	margin-left: .5em;
 	padding-right: .25em;
+	content: "\f307";
 }
 
 .byline::before {
-	content: "\f304";
 	margin-left: .5em;
+	content: "\f304";
 }
 
 .comment-meta a time::before {
@@ -96,8 +96,8 @@
 
 .nav-previous::before {
 	content: "\f430";
-	font: normal 2em/1 'Genericons';
 	text-shadow: $icon-primary 0 0 .2em;
+	font: normal 2em/1 'Genericons';
 }
 
 .nav-next .meta-nav {
@@ -106,52 +106,52 @@
 
 .nav-next::after {
 	content: "\f429";
-	font: normal 2em/1 'Genericons';
 	text-shadow: $icon-primary 0 0 .2em;
+	font: normal 2em/1 'Genericons';
 }
 
 .comment-reply-link::after {
-	content: "\f412";
 	padding-left: .25em;
+	content: "\f412";
 }
 
 .entry-meta .cat-links::after {
-	content: "\f301";
 	margin-right: .5em;
+	content: "\f301";
 }
 
 .entry-meta .tags-links::after {
-	content: "\f302";
 	margin-right: .5em;
+	content: "\f302";
 }
 
 .entry-meta .comments-link::after {
-	content: "\f300";
 	margin-right: .5em;
 	padding-left: .25em;
+	content: "\f300";
 }
 
 .post-edit-link::after {
-	content: "\f411";
 	padding-left: .25em;
+	content: "\f411";
 }
 
 .entry-meta .bookmark-permalink::after {
-	content: "\f444";
 	margin-right: .5em;
 	padding-left: .25em;
+	content: "\f444";
 }
 
 .search-results .entry-title::before {
-	content: "\f400";
 	margin: 0 .5em;
 	text-shadow: $white-secondary.1em .1em .2em;
+	content: "\f400";
 }
 
 .entry-content .more-link::after {
 	content: "\f429";
-	font: normal 2em/1 'Genericons';
 	text-shadow: $icon-primary 0 0 .2em;
+	font: normal 2em/1 'Genericons';
 }
 
 .category-sticky .entry-meta .cat-links::after {
@@ -230,20 +230,20 @@ color: $icon-primary;
 
 .format-video .entry-content p a::after{
 	content: "\f104";
-	font: normal 2em/1 'Genericons';
 	text-shadow: $icon-primary 0 0 .2em;
+	font: normal 2em/1 'Genericons';
 }
 
 .format-audio .entry-content p a::after{
 	content: "\f109";
-	font: normal 2em/1 'Genericons';
 	text-shadow: $icon-primary 0 0 .2em;
+	font: normal 2em/1 'Genericons';
 }
 
 .format-link .entry-content p a::after {
 	content: "\f107";
-	font: normal 2em/1 'Genericons';
 	text-shadow: $icon-primary 0 0 .2em;
+	font: normal 2em/1 'Genericons';
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-ms-transform: rotate(-45deg);
@@ -252,16 +252,16 @@ color: $icon-primary;
 }
 
 .format-status .entry-content p:first-child::after {
-	content: "\f455";
 	padding-left: .1875em;
-	font: normal 2em/1 'Genericons';
+	content: "\f455";
 	text-shadow: $icon-primary 0 0 .2em;
+	font: normal 2em/1 'Genericons';
 }
 
 .format-aside .entry-content p:first-child::before {
 	content: "\f425";
-	font: normal 2em/1 'Genericons';
 	text-shadow: $icon-primary 0 0 .2em;
+	font: normal 2em/1 'Genericons';
 }
 
 // Social icons for categories - these categories must be created by the user.
@@ -289,103 +289,102 @@ color: $icon-primary;
 	@include genericon-primary;
 	color: $icon-primary;
 }
-
 .category-github .entry-meta .cat-links::after {
-	content: '\f200';
 	margin-right: .5em;
+	content: '\f200';
 }
 
 .category-dribbble .entry-meta .cat-links::after {
-	content: '\f201';
 	margin-right: .5em;
+	content: '\f201';
 }
 
 .category-twitter .entry-meta .cat-links::after {
-	content: '\f202';
 	margin-right: .5em;
+	content: '\f202';
 }
 
 .category-facebook .entry-meta .cat-links::after {
-	content: '\f203';
 	margin-right: .5em;
+	content: '\f203';
 }
 
 .category-wordpress .entry-meta .cat-links::after {
-	content: '\f205';
 	margin-right: .5em;
+	content: '\f205';
 }
 
 .category-google-plus .entry-meta .cat-links::after {
-	content: '\f218';
 	margin-right: .5em;
+	content: '\f218';
 }
 
 .category-linkedin .entry-meta .cat-links::after {
-	content: '\f207';
 	margin-right: .5em;
+	content: '\f207';
 }
 
 .category-pinterest .entry-meta .cat-links::after {
-	content: '\f209';
 	margin-right: .5em;
+	content: '\f209';
 }
 
 .category-flickr .entry-meta .cat-links::after {
-	content: '\f211';
 	margin-right: .5em;
+	content: '\f211';
 }
 
 .category-vimeo .entry-meta .cat-links::after {
-	content: '\f212';
 	margin-right: .5em;
+	content: '\f212';
 }
 
 .category-youtube .entry-meta .cat-links::after {
-	content: '\f213';
 	margin-right: .5em;
+	content: '\f213';
 }
 
 .category-tumblr .entry-meta .cat-links::after {
-	content: '\f214';
 	margin-right: .5em;
+	content: '\f214';
 }
 
 .category-instagram .entry-meta .cat-links::after {
-	content: '\f215';
 	margin-right: .5em;
+	content: '\f215';
 }
 
 .category-codepen .entry-meta .cat-links::after {
-	content: '\f216';
 	margin-right: .5em;
+	content: '\f216';
 }
 
 .category-polldaddy .entry-meta .cat-links::after {
-	content: '\f217';
 	margin-right: .5em;
+	content: '\f217';
 }
 
 .category-skype .entry-meta .cat-links::after {
-	content: '\f220';
 	margin-right: .5em;
+	content: '\f220';
 }
 
 .category-reddit .entry-meta .cat-links::after {
-	content: '\f222';
 	margin-right: .5em;
+	content: '\f222';
 }
 
 .category-stumbleupon .entry-meta .cat-links::after {
-	content: '\f223';
 	margin-right: .5em;
+	content: '\f223';
 }
 
 .category-dropbox .entry-meta .cat-links::after {
-	content: '\f225';
 	margin-right: .5em;
+	content: '\f225';
 }
 
 .category-portfolio .entry-meta .cat-links::after {
-	content: '\f460';
 	margin-right: .5em;
+	content: '\f460';
 }

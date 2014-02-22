@@ -11,8 +11,8 @@
 .format-quote .entry-title a {
 	@include font-size-26;
 	color: $silver;
-	font-family: $font-serif;
 	text-transform: uppercase;
+	font-family: $font-serif;
 }
 
 .format-quote p,
@@ -46,13 +46,13 @@
 	@include border-radius(.9375em);
 	@include background-clip;
 	@include box-shadow(.1em .1em .2em $white-secondary);
-	height: auto;
+	margin: 0;
+	padding: 0;
 	max-width: -moz-calc(100% - .375em);
 	max-width: -webkit-calc(100% - .375em);
 	max-width: -o-calc(100% - .375em);
 	max-width: calc(100% - .375em);  // 100% - the border = large size images fit perfectly.
-	margin: 0;
-	padding: 0;
+	height: auto;
 	border: .0625em solid $secondary;
 }
 
@@ -86,9 +86,9 @@
 
 .single-format-chat .chat-author::before  {
 	@include genericon-primary;
-	content: "\f108";
 	padding-right: .1875em;
 	color: $tertiary;
+	content: "\f108";
 }
 
 /* Asides */
@@ -106,8 +106,8 @@
 }
 
 .aside-permalink a {
-	cursor: pointer;
 	color: $highlight-link;
+	cursor: pointer;
 }
 
 .aside-permalink a:hover {
@@ -129,8 +129,8 @@
 }
 
 .status-permalink a {
-	cursor: pointer;
 	color: $highlight-link;
+	cursor: pointer;
 }
 
 .status-permalink a:hover {
@@ -149,9 +149,9 @@
 }
 
 .format-link .entry-content p a {
-	cursor: pointer;
 	box-shadow: none;
 	color: $highlight-link;
+	cursor: pointer;
 }
 
 .format-link .entry-content p a:hover {
@@ -173,9 +173,9 @@
 }
 
 .format-audio .entry-content p a {
-	cursor: pointer;
 	box-shadow: none;
 	color: $highlight-link;
+	cursor: pointer;
 }
 
 .format-audio .entry-content p a:hover {
@@ -193,9 +193,9 @@
 }
 
 .format-video .entry-content p a {
-	cursor: pointer;
 	box-shadow: none;
 	color: $highlight-link;
+	cursor: pointer;
 }
 
 .format-video .entry-content p a:hover {
@@ -204,11 +204,11 @@
 
 .format-video .entry-content iframe {
 	@include box-shadow(.3125em .3125em .3125em $white-box-shadow);
+	margin: 0;
+	padding: 0;
 	max-width: -moz-calc(100% - .375em);
 	max-width: -webkit-calc(100% - .375em);
 	max-width: -o-calc(100% - .375em);
 	max-width: calc(100% - .375em);  // 100% - the border = large size images fit perfectly.
-	margin: 0;
-	padding: 0;
 	border: .1875em double $tertiary;
 }

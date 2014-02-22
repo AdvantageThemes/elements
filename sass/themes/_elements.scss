@@ -56,10 +56,10 @@ $icon-secondary:	hsla(195, 100%, 27%, 1);	// #00688B Deep Sky Blue
 @mixin genericon-primary {
 	display: inline-block;
 	vertical-align: middle;
+	text-decoration: inherit;
 	font: normal 1em/1 'Genericons';
 	font-weight: normal;
 	font-style: normal;
-	text-decoration: inherit;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -68,8 +68,8 @@ $icon-secondary:	hsla(195, 100%, 27%, 1);	// #00688B Deep Sky Blue
 @mixin screen-reader {
 /* Text meant only for screen readers */
 	.screen-reader-text {
-		clip: rect(.0625em, .0625em, .0625em, .0625em);
 		position: absolute;
+		clip: rect(.0625em, .0625em, .0625em, .0625em);
 	}
 
 	.screen-reader-text:hover,
@@ -77,20 +77,20 @@ $icon-secondary:	hsla(195, 100%, 27%, 1);	// #00688B Deep Sky Blue
 	.screen-reader-text:focus {
 		@include border-radius(.1875em);
 		@include box-shadow (0 0 .9375em .9375em $darkgray);
-		display: block;
-		clip: auto;
-		width: auto;
-		height: auto;
 		top: .3125em;
 		left: .3125em;
-		padding: .9375em 1.4375em .875em;
 		z-index: 100000; /* Above WP toolbar */
+		display: block;
+		clip: auto;
+		padding: .9375em 1.4375em .875em;
+		width: auto;
+		height: auto;
 		background-color: $white-secondary;
 		color: $black-secondary;
+		text-decoration: none;
 		font-weight: 600;
 		font-size: em(14);
 		line-height: normal;
-		text-decoration: none;
 	}
 }
 

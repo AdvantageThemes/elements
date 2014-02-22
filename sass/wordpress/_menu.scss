@@ -6,12 +6,12 @@
 	@include border-radius(.9375em);
 	@include background-clip;
 	@include box-shadow(.3125em .3125em .3125em $white-box-shadow);
-	display: block;
 	position: relative;
+	z-index: 9;
+	display: block;
 	float: left;
 	clear: both;
 	width: 100%;
-	z-index: 9;
 	background-color: $primary;
 }
 
@@ -60,18 +60,17 @@
 	text-decoration: none;
 }
 
-
 .main-navigation ul ul {
 	@include border-radius(.9375em);
 	@include background-clip;
 	@include box-shadow(.3125em .3125em .3125em $white-box-shadow);
-	display: none;
 	position: absolute;
-	float: left;
 	top: 4.375em;
 	left: 0;
-	margin-top: 0;
 	z-index: 9;
+	display: none;
+	float: left;
+	margin-top: 0;
 	border: .0625em solid $black-secondary;
 	background-color: $primary;
 }
@@ -86,8 +85,8 @@
 
 .main-navigation ul ul a {
 	@include font-size-16;
-	width: em(200);
 	padding: .875em;
+	width: em(200);
 	background: none;
 	font-weight: 600;
 }
@@ -191,12 +190,12 @@
 
 	.main-navigation h1::before {
 		padding-right: .25em;
+		color: $icon-secondary;
+		content: "\f419";
 		vertical-align: middle;
+		text-shadow: $icon-primary 0 0 .2em;
 		font: normal 1em/1 'Genericons';
 		-webkit-font-smoothing: antialiased;
-		content: "\f419";
-		color: $icon-secondary;
-		text-shadow: $icon-primary 0 0 .2em;
 	}
 
 	.main-navigation ul {
@@ -239,8 +238,8 @@
 	margin: 0;
 	padding: 0;
 	color: $silver;
-	font-family: $font-serif;
 	list-style: none;
+	font-family: $font-serif;
 }
 
 .navigation-footer li {
@@ -250,14 +249,14 @@
 }
 
 .navigation-footer a::after {
+	display: inline-block;
 	margin: 0;
 	padding-left: .75em;
-	display: inline-block;
+	color: $icon-primary;
+	content: "\f421";
 	vertical-align: middle;
 	font: normal 1em/1 'Genericons';
 	-webkit-font-smoothing: antialiased;
-	content: "\f421";
-	color: $icon-primary;
 }
 
 .navigation-footer li:last-child a::after {
@@ -309,8 +308,8 @@
 	margin: 0;
 	padding: 0;
 	color: $silver;
-	font-family: $font-serif;
 	list-style: none;
+	font-family: $font-serif;
 }
 
 .navigation-top li {
@@ -320,14 +319,14 @@
 }
 
 .navigation-top a::after {
+	display: inline-block;
 	margin: 0;
 	padding-left: .75em;
-	display: inline-block;
+	color: $icon-primary;
+	content: "\f421";
 	vertical-align: middle;
 	font: normal 1em/1 'Genericons';
 	-webkit-font-smoothing: antialiased;
-	content: "\f421";
-	color: $icon-primary;
 }
 
 .navigation-top li:first-child a::after {

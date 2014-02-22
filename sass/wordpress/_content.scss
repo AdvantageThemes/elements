@@ -3,8 +3,8 @@
 
 .site-content {
 	position: relative;
-	clear: both;
 	z-index: 4;
+	clear: both;
 	background: transparent;
 }
 
@@ -41,10 +41,10 @@
 .post-label {
 	@include font-size-16;
 	display: inline-block;
-	opacity: .5;
 	color: $green;
-	font-weight: 600;
 	text-transform: uppercase;
+	font-weight: 600;
+	opacity: .5;
 }
 
 .page-header {
@@ -202,8 +202,8 @@
 
 .entry-content table,
 .comment-content table {
-	width: 100%;
 	margin: 0 .077em 1.923em 0;
+	width: 100%;
 	text-align: left;
 }
 
@@ -213,8 +213,8 @@
 .comment-content thead th {
 	@include font-size-16;
 	padding: 1em;
-	font-weight: 700;
 	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .entry-content tr td,
@@ -277,9 +277,9 @@ html input[type="submit"] {
 }
 
 .author .site-main li a {
-	cursor: pointer;
-	color: $highlight-link;
 	box-shadow: none;
+	color: $highlight-link;
+	cursor: pointer;
 }
 
 .author .site-main li a:hover {

@@ -37,64 +37,57 @@
 
 	/* Two Footer Widget Areas */
 	#above-footer.two .widget-area {
-		//display: inline;
 		float: left;
-		width: 44.44444%;
-		max-width: 30em;
 		margin-right: 11.11111%;
 		margin-left: 0;
+		max-width: 30em;
+		width: 44.44444%;
 	}
 
 	// #above-footer.two .widget-area + .widget-area {} Empty rule but leave in for future use.
 
 	/* Three Footer Widget Areas */
 	#above-footer.three .widget-area {
-		//display: inline;
 		float: left;
-		width: 28.57143%;
-		max-width: 20em;
 		margin-right: 7.14286%;
 		margin-left: 0;
+		max-width: 20em;
+		width: 28.57143%;
 	}
 
 	#above-footer.three .widget-area + .widget-area {
-		//display: inline;
 		float: left;
-		width: 28.57143%;
 		margin-right: 0;
 		margin-left: 0;
+		width: 28.57143%;
 	}
 
 	#above-footer.three .widget-area + .widget-area + .widget-area {
-		//display: inline;
 		float: right;
-		width: 28.57143%;
 		margin-right: 0;
 		margin-left: 7.14286%;
+		width: 28.57143%;
 	}
-
 
 	/* Four Footer Widget Areas */
 	#above-footer.four .widget-area {
-		//display: inline;
 		float: left;
-		width: 21.05263%;
-		max-width: 15em;
 		margin-right: 5.26316%;
+		max-width: 15em;
+		width: 21.05263%;
 	}
 
 	#above-footer.four .widget-area + .widget-area + .widget-area + .widget-area {
-		//display: inline;
 		float: right;
-		width: 21.05263%;
 		margin-right: 0;
 		margin-left: 5.26316%;
+		width: 21.05263%;
 	}
 
 	#below-header {
 		display: inline-block;
-		width: 100%;
 		margin-top: em(20);
+		width: 100%;
 	}
 
 	#above-main {
@@ -114,8 +107,8 @@
     // these settings should be exactly the same as #sidebar-right found in _global.scss under - structure
 	#content #widget-content-message {
 		float: right;
-		width: 32.20339%;
 		margin-right: 0;
+		width: 32.20339%;
 		color: $secondary;
 	}
 

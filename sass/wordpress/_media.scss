@@ -11,11 +11,11 @@ img.size-large,
 img.size-thumbnail {
 	@include border-radius(.9375em);
 	@include background-clip;
-	height: auto;
 	max-width: -moz-calc(100% - .375em);
 	max-width: -webkit-calc(100% - .375em);
 	max-width: -o-calc(100% - .375em);
 	max-width: calc(100% - .375em);  // 100% - the border = large size images fit perfectly.
+	height: auto;
 	border: .1875em double $black-secondary;
 }
 
@@ -23,14 +23,14 @@ img.size-thumbnail {
 .entry-thumbnail img {
 	@include border-radius(.9375em);
 	@include background-clip;
-	height: auto;
+	margin: 0;
+	padding: 0;
 	max-width: -moz-calc(100% - .375em);
 	max-width: -webkit-calc(100% - .375em);
 	max-width: -o-calc(100% - .375em);
 	max-width: calc(100% - .375em);  // 100% - the border = large size images fit perfectly.
+	height: auto;
 	border: .1875em double $tertiary;
-	margin: 0;
-	padding: 0;
 }
 
 // Header Image for Site.
@@ -38,14 +38,14 @@ img.size-thumbnail {
 	@include border-radius(.9375em);
 	@include background-clip;
 	@include box-shadow(.3125em .3125em .3125em $white-box-shadow);
-	height: auto;
+	margin: 0;
+	padding: 0;
 	max-width: -moz-calc(100% - .375em);
 	max-width: -webkit-calc(100% - .375em);
 	max-width: -o-calc(100% - .375em);
 	max-width: calc(100% - .375em);  // 100% - the border = large size images fit perfectly.
+	height: auto;
 	border: .1875em double $tertiary;
-	margin: 0;
-	padding: 0;
 }
 
 // added for the editor styles
@@ -120,8 +120,8 @@ img.alignnone {
 	@include box-sizing(border-box);
 	margin: auto;
 	color: $white-secondary;
-	font-family: $font-script;
 	text-align: center;
+	font-family: $font-script;
 }
 
 .wp-caption .wp-caption-text {
@@ -137,8 +137,8 @@ img.alignnone {
 .gallery-caption {
 	margin: auto;
 	color: $white-secondary;
-	font-family: $font-script;
 	text-align: center;
+	font-family: $font-script;
 }
 
 .site-main .gallery {
@@ -178,14 +178,15 @@ video {
 
 /* Video */
 .video-wrapper .video-player {
-	height: auto !important;
-	max-width: 650px;
 	margin: 0 auto 1.25em auto;
 	padding: 0;
-}
-.videopress-placeholder {
+	max-width: 650px;
 	height: auto !important;
+}
+
+.videopress-placeholder {
 	max-width: 100%;
+	height: auto !important;
 }
 
 /* Audio */
