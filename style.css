@@ -1071,7 +1071,7 @@ td a:active {
   color: #333333;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.875em;
+  font-size: .875em;
   line-height: normal;
 }
 
@@ -1602,8 +1602,8 @@ td a:active {
 
 .navigation-footer li {
   float: left;
-  padding-right: 0.625em;
-  padding-left: 0.625em;
+  padding-right: .625em;
+  padding-left: .625em;
 }
 
 .navigation-footer a::after {
@@ -1673,8 +1673,8 @@ td a:active {
 
 .navigation-top li {
   float: right;
-  padding-right: 0.625em;
-  padding-left: 0.625em;
+  padding-right: .625em;
+  padding-left: .625em;
 }
 
 .navigation-top a::after {

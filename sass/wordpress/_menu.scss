@@ -86,7 +86,7 @@
 .main-navigation ul ul a {
 	@include font-size-16;
 	padding: .875em;
-	width: em(200);
+	width: 12.5em;
 	background: none;
 	font-weight: 600;
 }
@@ -185,7 +185,7 @@
 	.main-navigation h1 {
 		@include font-size-26;
 		color: $secondary;
-		text-indent: em(30);
+		text-indent: 1.875em;
 	}
 
 	.main-navigation h1::before {
@@ -215,17 +215,17 @@
 
 	.main-navigation ul ul {
 		position: absolute;
-		top: em(30);
+		top: 1.875em;
 		left: 10%;
 	}
 
 	.main-navigation ul ul ul {
-		top: em(30);
+		top: 1.875em;
 		left: 10%;
 	}
 
 	.main-navigation ul ul ul ul {
-		top: em(30);
+		top: 1.875em;
 		left: 10%;
 	}
 
@@ -244,8 +244,8 @@
 
 .navigation-footer li {
 	float: left;
-	padding-right: em(10);
-	padding-left: em(10);
+	padding-right: .625em;
+	padding-left: .625em;
 }
 
 .navigation-footer a::after {
@@ -314,8 +314,8 @@
 
 .navigation-top li {
 	float: right;
-	padding-right: em(10);
-	padding-left: em(10);
+	padding-right: .625em;
+	padding-left: .625em;
 }
 
 .navigation-top a::after {

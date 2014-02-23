@@ -46,14 +46,14 @@
 // Make sure that clicking Load more posts doesn't cause any jarring.
 .infinite-scroll #infinite-handle {
 	padding-top: 1.8em;
-	height: em(52);
+	height: 3.25em;
 }
 
 .infinite-scroll #infinite-handle span {
 	@include font-size-13;
 	display: block;
 	margin: 0 auto;
-	width: em(150);
+	width: 9.375em;
 	background: $white-secondary;
 	color: $black-secondary;
 	text-align: center;
@@ -65,8 +65,8 @@
 
 .infinite-scroll .infinite-loader {
 	margin: 0 auto;
-	padding: 0 0 em(62);
-	width: em(28);
+	padding: 0 0 3.875em;
+	width: 1.75em;
 }
 
 

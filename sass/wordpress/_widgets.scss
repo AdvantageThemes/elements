@@ -405,7 +405,7 @@ td.recentcommentsavatartop {
 	@include filter-gradient(#0e0e0e, #7d7e7d, vertical);
 	@include border-radius(.9375em);
 	@include background-clip;
-	min-height: em(180);
+	min-height: 11.25em;
 	background: #0e0e0e;
 }
 
