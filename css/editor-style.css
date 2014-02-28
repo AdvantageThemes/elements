@@ -171,6 +171,9 @@ h6 a:hover {
 }
 
 hr {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   display: block;
   margin: 1em 0;
   padding: 0;
@@ -1614,6 +1617,11 @@ img.alignnone {
   margin: 0 .25em;
 }
 
+.site-main .gallery dd,
+.site-main .gallery figcaption {
+  margin: 0;
+}
+
 /* Make sure embeds and iframes fit their containers */
 embed,
 iframe,
@@ -1661,7 +1669,7 @@ img.wp-smiley {
   margin: 0;
   padding: 0;
   border: none;
-  border-radius: none;
+  border-radius: 0;
   background: transparent;
 }
 

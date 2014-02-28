@@ -166,6 +166,11 @@ img.alignnone {
 	margin: 0 .25em;
 }
 
+.site-main .gallery dd,
+.site-main .gallery figcaption {
+	margin: 0;
+}
+
 /* Make sure embeds and iframes fit their containers */
 embed,
 iframe,
@@ -211,6 +216,6 @@ img.wp-smiley {
 	margin: 0;
 	padding: 0;
 	border: none;
-	border-radius: none;
+	border-radius: 0;
 	background: transparent;
 }

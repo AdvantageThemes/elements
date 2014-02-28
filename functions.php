@@ -83,7 +83,12 @@ function elements_setup() {
 	) ) );
 
 	// Enable support for HTML5 markup.
-	add_theme_support( 'html5', array( 'comment-list', 'search-form', 'comment-form', ) );
+	add_theme_support( 'html5', array(
+		'comment-list',
+		'search-form',
+		'comment-form',
+		'gallery',
+	) );
 
 	// This theme supports all available post formats by default.
 	add_theme_support( 'post-formats', array(

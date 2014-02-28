@@ -106,6 +106,7 @@ h6 a:hover {
 }
 
 hr {
+	@include box-sizing(border-box);
 	display: block;
 	margin: 1em 0;
 	padding: 0;
